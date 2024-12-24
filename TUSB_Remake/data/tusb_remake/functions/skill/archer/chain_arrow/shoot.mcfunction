@@ -9,6 +9,8 @@ scoreboard players operation @s MPConsumption = @s CurrentModeCost
 ### MPチェック
 function tusb_remake:skill/check_mp/
 
+tag @s add This
+
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
 ### MPが足りていたら発動
 execute if score _ ActivatedSkill matches 3210..3219 anchored eyes positioned ^ ^ ^ anchored feet at @e[distance=..1,type=arrow,sort=nearest,limit=1] run function tusb_remake:skill/archer/chain_arrow/apply/

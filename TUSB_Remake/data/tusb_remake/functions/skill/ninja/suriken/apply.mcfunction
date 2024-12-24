@@ -14,7 +14,7 @@ execute if score _ TUSB matches 6.. run scoreboard players set _ TUSB 5
 scoreboard players operation _ ActivatedSkill += _ TUSB
 
 ### 雪玉を手裏剣に設定
-execute as @e[distance=0,type=snowball,limit=1] run data merge entity @s {Tags:[Suriken,Projectile,FlyingObject,Driftable,TypeChecked],NoGravity:true,Item:{id:"minecraft:stick",Count:1b,tag:{Enchantments:[{id:"minecraft:thorns",lvl:1s}]}},PortalCooldown:10}
+execute as @e[distance=0,type=snowball,limit=1] at @s run data merge entity @s {Tags:[Suriken,Projectile,FlyingObject,Driftable,TypeChecked],NoGravity:true,Item:{id:"minecraft:stick",Count:1b,tag:{Enchantments:[{id:"minecraft:thorns",lvl:1s}]}},PortalCooldown:10}
 scoreboard players operation @e[distance=0,type=snowball,limit=1] ProjectileSkill = _ ActivatedSkill
 
 ### 手裏剣の履歴の最後に手裏剣を入れる

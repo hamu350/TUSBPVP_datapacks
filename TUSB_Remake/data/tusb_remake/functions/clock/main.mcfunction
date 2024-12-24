@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 初回ログイン時
-execute as @a[team=] at @s run function tusb_remake:login/first
+# execute as @a[team=] at @s run function tusb_remake:login/first
 ### ログイン時
 execute as @a[scores={LeaveGame=1..}] at @s run function tusb_remake:login/
 
@@ -69,3 +69,5 @@ execute as @a[scores={UseFireworkRocket=1..}] run function tusb_remake:player/us
 
 # NoAIの停止 Freeze おのれもやん => NoAIでも動くやつがいるみたいなのだったかも
 execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
+
+execute at @a as @e[distance=..33,type=spawner_minecart] run data modify entity @s Delay set value 1 

@@ -3,6 +3,8 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
+tag @s add This
+
 ### ルカナントラップを召喚
 execute if score @s ActivatedSkill matches 3000 run summon minecraft:arrow ~ ~ ~ {Silent:true,damage:0d,life:800s,Tags:[TypeChecked],Passengers:[{id:"minecraft:snowball",Item:{id:"minecraft:lingering_potion",Count:1b},CustomName:'"⇩DEF⇩"',CustomNameVisible:true,Tags:[Kasap,Kasap1,ArcherTrap,TypeChecked]}]}
 execute if score @s ActivatedSkill matches 3001 run summon minecraft:arrow ~ ~ ~ {Silent:true,damage:0d,life:800s,Tags:[TypeChecked],Passengers:[{id:"minecraft:snowball",Item:{id:"minecraft:lingering_potion",Count:1b},CustomName:'"⇩⇩DEF⇩⇩"',CustomNameVisible:true,Tags:[Kasap,Kasap2,ArcherTrap,TypeChecked]}]}

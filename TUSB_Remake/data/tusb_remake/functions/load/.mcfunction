@@ -251,8 +251,12 @@ scoreboard objectives add RadarVision dummy "レーダーヴィジョン効果�
 scoreboard objectives add ProjectileSkill dummy "投擲物に付与したスキルとレベル"
 scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性のあるスキル"
 
+scoreboard objectives add PlayerId dummy
+
+
 ### チーム
 team add FriendlyTeam
+team modify FriendlyTeam color green
 team modify FriendlyTeam friendlyFire false
 team modify FriendlyTeam seeFriendlyInvisibles true
 team modify FriendlyTeam collisionRule never

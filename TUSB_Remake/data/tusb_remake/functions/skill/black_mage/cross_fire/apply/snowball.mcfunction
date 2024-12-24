@@ -4,6 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 data modify entity @s Tags set value [CrossFire,FlyingObject,Driftable,TypeChecked]
+scoreboard players operation @s PlayerId = _ PlayerId
 
 execute if score _ ActivatedSkill matches 5210 run tag @s add CrossFire1
 execute if score _ ActivatedSkill matches 5211 run tag @s add CrossFire2

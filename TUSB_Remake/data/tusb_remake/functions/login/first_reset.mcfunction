@@ -21,7 +21,7 @@ function tusb_remake:random/reset
 ### お試しセットを有効にする
 tag @s add TrialSet
 ### トカルトコルデ初回松明イベントを有効にする
-tag @s add ISFUnreached
+# tag @s add ISFUnreached
 
 ### 嫌な予感のランク
 scoreboard players set @s EventRank -1
@@ -33,3 +33,6 @@ effect give @s minecraft:absorption 1 0 true
 
 ### ログインの扱いにする
 scoreboard players set @s LeaveGame 1
+
+scoreboard players add $Max PlayerId 1
+scoreboard players operation @s PlayerId = $Max PlayerId
