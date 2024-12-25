@@ -71,3 +71,14 @@ execute as @a[scores={UseFireworkRocket=1..}] run function tusb_remake:player/us
 execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
 execute at @a as @e[distance=..33,type=spawner_minecart] run data modify entity @s Delay set value 1 
+
+### トリガー
+execute as @a at @s if entity @s[scores={SneakingTime=1..}] run function tusb_remake:player/trigger/sneak
+execute as @a at @s if entity @s[scores={SneakFrequency=1..}] run function tusb_remake:player/trigger/sneak_frequency
+
+### プレイヤーゲーム設定
+execute as @a at @s unless score @s ShowMenu matches 0 run function tusb_remake:login/triggerd
+
+### スキル変更設定
+execute as @a at @s unless score @s ChangeSkillSet matches 0 run function tusb_remake:player/display/skillset
+execute as @a at @s unless score @s SkillSetting matches 0 run function tusb_remake:player/display/skilldisplay
