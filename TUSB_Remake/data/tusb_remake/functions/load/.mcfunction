@@ -253,6 +253,14 @@ scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性の�
 
 scoreboard objectives add PlayerId dummy
 
+# メニュートリガースコア
+scoreboard objectives add _ dummy {"text":"一時変数"}
+scoreboard objectives add ShowMenu trigger {"text": "メニュー表示"}
+scoreboard objectives add ChangeSkillSet trigger {"text": "スキル変更表示"}
+scoreboard objectives add SkillSetting trigger {"text": "スキル設定表示"}
+scoreboard objectives add SneakingTime minecraft.custom:sneak_time {"text":"スニーク時間"}
+scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
+
 
 ### チーム
 team add FriendlyTeam

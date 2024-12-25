@@ -7,10 +7,10 @@
 scoreboard players operation @s USBDimension = @s AreaChangeFlag
 
 ### エリア処理持ち込み判定 BringItemError
-execute at @s run function tusb_remake:area/move/check_item/
+# execute at @s run function tusb_remake:area/move/check_item/
 
 ### テーブルマウンテンに移動できたとき
-tag @s[scores={AreaChangeFlag=11}] add IgnoreEnderChest
+# tag @s[scores={AreaChangeFlag=11}] add IgnoreEnderChest
 
 ### エリアタイトル表示
 title @s[scores={AreaChangeFlag=-100..}] times 30 40 40
@@ -36,6 +36,6 @@ scoreboard players reset @s ModeChangeA
 scoreboard players reset @s ModeChangeB
 
 ### お試しセットを渡すとこ
-execute if entity @s[x=-2725,y=88,z=-382,distance=..2,scores={AreaChangeFlag=10},tag=TrialSet] run function tusb_remake:area/move/give_trialset
+# execute if entity @s[x=-2725,y=88,z=-382,distance=..2,scores={AreaChangeFlag=10},tag=TrialSet] run function tusb_remake:area/move/give_trialset
 
 scoreboard players set @s AreaChangeFlag -999
