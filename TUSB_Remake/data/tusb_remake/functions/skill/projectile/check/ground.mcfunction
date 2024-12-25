@@ -10,3 +10,6 @@ execute if score @s ProjectileSkill matches 3260..3269 run function tusb_remake:
 
 # 接地矢無効化
 data merge entity @s {Tags:[TypeChecked]}
+
+#直撃判定消去
+execute on passengers run kill @s
