@@ -217,6 +217,7 @@ scoreboard objectives add IronWill dummy "ノックバック軽減機会ポイ�
 scoreboard objectives add NinjaTime dummy "連舞・跳躍効果時間"
 scoreboard objectives add Tsuremai dummy "連舞レベル"
 scoreboard objectives add Choyaku dummy "跳躍レベル"
+scoreboard objectives add Isukumi dummy "居縮タイマー"
 scoreboard objectives add KasapLevel dummy "ルカナンレベル"
 scoreboard objectives add KasapTimer dummy "ルカナンタイマー"
 scoreboard objectives add Kazakiri dummy "風切効果時間"
