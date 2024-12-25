@@ -19,8 +19,8 @@ execute rotated as 0-0-1-0-1 rotated ~90 ~ positioned ^ ^ ^5 run particle minecr
 execute rotated as 0-0-1-0-1 rotated ~180 ~ positioned ^ ^ ^5 run particle minecraft:smoke ~ ~ ~ 0 0 0 0 1 force
 execute rotated as 0-0-1-0-1 rotated ~270 ~ positioned ^ ^ ^5 run particle minecraft:smoke ~ ~ ~ 0 0 0 0 1 force
 
-
+execute on origin run tag @s add Owner
 scoreboard players operation _ KasapLevel = @s KasapLevel
-execute as @e[distance=..5,tag=!This,tag=Enemy,tag=!InKasap,sort=random,limit=3] run function tusb_remake:skill/archer/kasap_trap/schedule/apply
-
+execute as @e[distance=..5,tag=!This,tag=!Owner,predicate=tusb_remake:player,tag=!InKasap,sort=random,limit=3] run function tusb_remake:skill/archer/kasap_trap/schedule/apply
+tag @e[tag=Owner] remove Owner
 data modify storage tusb_remake: _ set value true

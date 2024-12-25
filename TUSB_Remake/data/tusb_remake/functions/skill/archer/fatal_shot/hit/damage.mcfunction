@@ -25,3 +25,5 @@ effect clear @s minecraft:fire_resistance
 effect clear @s minecraft:water_breathing
 effect give @s minecraft:slowness 20 19
 effect give @s minecraft:weakness 20 19
+effect give @s levitation 20 130
+effect give @s jump_boost 20 130
