@@ -4,7 +4,9 @@
 ### This software is released under the MIT License, see LICENSE.
 
 data modify storage tusb_remake: drain_result set value false
-execute as @e[distance=..10,type=#tusb_remake:living,limit=1] run function tusb_remake:skill/black_mage/drain/apply
+tag @s add This
+execute as @e[distance=..10,type=#tusb_remake:living,tag=!This,limit=1] run function tusb_remake:skill/black_mage/drain/apply
+tag @s remove This
 
 ### ドレインできなかったらMPを返す
 execute if data storage tusb_remake: {drain_result:false} run scoreboard players operation @s MP += @s MPConsumption
