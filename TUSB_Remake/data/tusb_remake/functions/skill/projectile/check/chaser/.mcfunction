@@ -8,10 +8,14 @@ execute store result storage score_damage: Argument.Damage double 0.01 run data 
 
 scoreboard players operation _ PotentialSkill = @s ProjectileSkill
 
+execute on passengers on origin run tag @s add Owner
+
 ### リメイク：エンチェイスの範囲を拡大
 data modify storage tusb_remake: chaser_invoked set value false
-execute if entity @s[tag=Chaser1] as @e[distance=..5,tag=!This,tag=Enemy,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
-execute if entity @s[tag=Chaser2] as @e[distance=..8,tag=!This,tag=Enemy,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
+execute if entity @s[tag=Chaser1] as @e[distance=..5,tag=!This,predicate=tusb_remake:player,tag=!Owner,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
+execute if entity @s[tag=Chaser2] as @e[distance=..8,tag=!This,predicate=tusb_remake:player,tag=!Owner,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
+
+tag @e[tag=Owner] remove Owner
 
 ### 発動したなら消す
 execute if data storage tusb_remake: {chaser_invoked:true} run function tusb_remake:skill/projectile/check/chaser/remove/
