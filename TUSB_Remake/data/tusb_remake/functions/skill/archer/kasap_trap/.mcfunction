@@ -9,6 +9,8 @@ tag @s add This
 execute if score @s ActivatedSkill matches 3000 run summon minecraft:arrow ~ ~ ~ {Silent:true,damage:0d,life:800s,Tags:[TypeChecked],Passengers:[{id:"minecraft:snowball",Item:{id:"minecraft:lingering_potion",Count:1b},CustomName:'"⇩DEF⇩"',CustomNameVisible:true,Tags:[Kasap,Kasap1,ArcherTrap,TypeChecked]}]}
 execute if score @s ActivatedSkill matches 3001 run summon minecraft:arrow ~ ~ ~ {Silent:true,damage:0d,life:800s,Tags:[TypeChecked],Passengers:[{id:"minecraft:snowball",Item:{id:"minecraft:lingering_potion",Count:1b},CustomName:'"⇩⇩DEF⇩⇩"',CustomNameVisible:true,Tags:[Kasap,Kasap2,ArcherTrap,TypeChecked]}]}
 execute if score @s ActivatedSkill matches 3002..3009 run summon minecraft:arrow ~ ~ ~ {Silent:true,damage:0d,life:800s,Tags:[TypeChecked],Passengers:[{id:"minecraft:snowball",Item:{id:"minecraft:lingering_potion",Count:1b},CustomName:'"⇩⇩⇩DEF⇩⇩⇩"',CustomNameVisible:true,Tags:[Kasap,Kasap3,ArcherTrap,TypeChecked]}]}
+data modify entity @e[tag=Kasap,limit=1,sort=nearest] Owner set from entity @s UUID
+
 
 ### ルカナントラップのレベルを設定
 scoreboard players set @e[distance=..1,tag=Kasap1] KasapLevel 1

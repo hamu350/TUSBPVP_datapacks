@@ -4,6 +4,8 @@
 ### This software is released under the MIT License, see LICENSE.
 
 execute store result score _ TUSB run time query gametime
-execute as @e[tag=ZantetsuPoint] if score @s TUSB = _ TUSB at @s as @e[distance=..10,tag=!This,tag=Enemy] at @s run function tusb_remake:skill/knight/zan_tetsu_ken/slash/target
+execute as @e[tag=ZantetsuPoint] if score @s TUSB = _ TUSB on origin run tag @s add Owner
+execute as @e[tag=ZantetsuPoint] if score @s TUSB = _ TUSB at @s as @e[distance=..10,tag=!This,tag=!Owner,predicate=tusb_remake:player] at @s run function tusb_remake:skill/knight/zan_tetsu_ken/slash/target
 
 execute as @e[tag=ZantetsuPoint] if score @s TUSB <= _ TUSB run kill @s
+tag @e[tag=Owner] remove Owner
