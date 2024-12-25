@@ -3,5 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-execute if entity @s[nbt={HurtTime:10s}] run function tusb_remake:skill/projectile/hit
-tag @s remove NearProjectile
+execute on origin run tag @s add Owner
+execute as @e[predicate=tusb_remake:player,distance=..5,tag=!Owner,tag=NearProjectile,limit=1,sort=nearest] run function tusb_remake:skill/projectile/hit
+tag @e[tag=Owner] remove Owner
+kill @s
