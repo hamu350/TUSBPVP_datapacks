@@ -4,10 +4,10 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### マルチヒット防止のエフェクト
-effect give @s minecraft:saturation 10 127 true
+#effect give @s minecraft:saturation 10 127 true
 
-execute if entity @s[type=#tusb_remake:undead] run effect give @s minecraft:instant_health 1 6 true
-execute unless entity @s[type=#tusb_remake:undead] run effect give @s minecraft:instant_damage 1 3 true
+execute if entity @s[type=#tusb_remake:undead] run effect give @s minecraft:instant_health 10 6 true
+execute unless entity @s[type=#tusb_remake:undead] run effect give @s minecraft:instant_damage 10 3 true
 
 playsound block.fire.extinguish master @a[distance=..32] ~ ~ ~ 2 2 0
 particle firework ~ ~1 ~ 1 1 1 0.25 20 force
