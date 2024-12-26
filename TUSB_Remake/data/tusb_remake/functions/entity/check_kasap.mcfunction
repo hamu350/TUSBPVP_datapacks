@@ -22,10 +22,11 @@ execute store result storage score_damage: Argument.Damage double 0.01 run score
 execute if score _ TUSB matches 1.. run function score_damage:api/attack
 
 ### HPを記録
-tellraw @a {"score": {"name": "@s","objective": "HP"}}
-tellraw @a {"score": {"name": "_","objective": "TUSB"}}
+#tellraw @a {"score": {"name": "@s","objective": "HP"}}
+#tellraw @a {"score": {"name": "_","objective": "TUSB"}}
 scoreboard players operation @s HP -= _ TUSB
-execute store result storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.Health float 0.01 run scoreboard players get @s HP
+execute if entity @s[type=player] store result storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.Health float 0.01 run scoreboard players get @s HP
+execute if entity @s[type=!player] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].TUSB.Health set from entity @s Health
 execute store result score @s HP run data get entity @s Health 1
 
 ### ルカナンの効果時間を更新
