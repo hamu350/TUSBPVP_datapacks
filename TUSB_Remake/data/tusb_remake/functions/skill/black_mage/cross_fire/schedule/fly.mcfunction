@@ -12,6 +12,7 @@ particle flame ~ ~ ~ 0.0 0.0 2.0 0.0 10 force
 execute if entity @s[tag=CrossFire1] run data modify storage score_damage: Argument set value {Damage:10.00,DamageType:"Projectile"}
 execute if entity @s[tag=CrossFire2] run data modify storage score_damage: Argument set value {Damage:20.00,DamageType:"Projectile"}
 execute if entity @s[tag=CrossFire3] run data modify storage score_damage: Argument set value {Damage:30.00,DamageType:"Projectile"}
+execute on origin run function tusb_remake:skill/use_damage_skill
 execute on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
 execute positioned ~-7 ~ ~ as @e[dx=14,tag=!Owner,predicate=tusb_remake:player,nbt=!{ActiveEffects:[{Id:23}]}] unless score @s PlayerId = _ PlayerId run function tusb_remake:skill/black_mage/cross_fire/schedule/hit
 execute positioned ~ ~-7 ~ as @e[dy=14,tag=!Owner,predicate=tusb_remake:player,nbt=!{ActiveEffects:[{Id:23}]}] unless score @s PlayerId = _ PlayerId run function tusb_remake:skill/black_mage/cross_fire/schedule/hit

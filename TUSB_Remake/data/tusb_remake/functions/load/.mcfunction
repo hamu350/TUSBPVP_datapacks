@@ -271,6 +271,7 @@ scoreboard objectives add Remaining dummy {"text": "残り残機"}
 
 # キルカウント
 scoreboard objectives add KillCount playerKillCount {"text": "キルカウント"}
+scoreboard objectives add PreKillCount dummy {"text":"前tickのキルカウント"}
 
 ### チーム
 team add NormalTeam

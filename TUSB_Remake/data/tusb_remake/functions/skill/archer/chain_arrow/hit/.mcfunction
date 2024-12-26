@@ -5,7 +5,7 @@
 scoreboard players operation _ PotentialSkill = @s PotentialSkill
 scoreboard players remove _ PotentialSkill 10000
 
-execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
+tag @s add This
 
 ### ダメージを設定 (ダメージ*2.5)
 data modify storage score_damage: Argument set value {Damage:0.00,DamageType:"Projectile"}

@@ -9,6 +9,7 @@ scoreboard players operation @s MPConsumption = @s CurrentModeCost
 ### MPチェック
 function tusb_remake:skill/check_mp/
 
+function tusb_remake:skill/use_damage_skill
 execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
