@@ -14,6 +14,10 @@ execute if entity @s[advancements={tusb_remake:press={trading_show_conquer=true}
 ### もうトカルト解除の感圧版を押してないなら
 execute if entity @s[advancements={tusb_remake:press={unlock_tocult=true}}] if predicate tusb_remake:area/skyland positioned 203 147 -20 align xyz unless entity @s[dx=0] run advancement revoke @s only tusb_remake:press unlock_tocult
 
+### もうタワーバンク行きかえりの感圧版を押していないなら
+execute if entity @s[advancements={tusb_remake:press={tower_bank=true}}] if predicate tusb_remake:area/cloudia positioned -2738 89 -375 align xyz unless entity @s[dx=0] run advancement revoke @s only tusb_remake:press tower_bank
+execute if entity @s[advancements={tusb_remake:press={tower_bank_exit=true}}] if predicate tusb_remake:area/cloudia positioned -2818 107 -406 align xyz unless entity @s[dz=1] run advancement revoke @s only tusb_remake:press tower_bank_exit
+
 ### もうチーム変更の感圧版を押してないなら
 execute if entity @s[advancements={tusb_remake:press={team_red=true}}] if predicate tusb_remake:area/cloudia positioned -2738 89 -385 align xyz unless entity @s[dx=0] run advancement revoke @s only tusb_remake:press team_red
 execute if entity @s[advancements={tusb_remake:press={team_blue=true}}] if predicate tusb_remake:area/cloudia positioned -2738 89 -390 align xyz unless entity @s[dx=0] run advancement revoke @s only tusb_remake:press team_blue
