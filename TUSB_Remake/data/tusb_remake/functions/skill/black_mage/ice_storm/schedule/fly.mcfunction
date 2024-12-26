@@ -14,7 +14,7 @@ fill ~-2 ~-2 ~-2 ~2 ~2 ~2 minecraft:frosted_ice replace minecraft:water[level=0]
 execute if entity @s[tag=IceStorm1] run data modify storage score_damage: Argument set value {Damage:15.00,DamageType:"Projectile"}
 execute if entity @s[tag=IceStorm2] run data modify storage score_damage: Argument set value {Damage:25.00,DamageType:"Projectile"}
 execute if entity @s[tag=IceStorm3] run data modify storage score_damage: Argument set value {Damage:40.00,DamageType:"Projectile"}
-execute on origin run tag @s add Owner
+execute on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
 execute as @e[distance=..8,tag=!This,type=!#tusb_remake:resist_ice,tag=!Owner,predicate=tusb_remake:player,nbt=!{ActiveEffects:[{Id:23}]}] at @s unless score @s PlayerId = _ PlayerId run function tusb_remake:skill/black_mage/ice_storm/schedule/hit
 tag @e[tag=Owner] remove Owner
 data modify storage tusb_remake: _ set value true

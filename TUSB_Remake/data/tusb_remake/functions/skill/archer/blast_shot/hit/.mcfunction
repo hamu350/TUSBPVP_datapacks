@@ -7,7 +7,7 @@ particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force
 
 scoreboard players operation _ PotentialSkill = @s PotentialSkill
 
-execute on passengers on origin run tag @s add Owner
+execute on passengers on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
 
 ### リメイク：ダメージを平均化して少しアップ
 execute if score _ PotentialSkill matches 3230 run data modify storage score_damage: Argument set value {Damage:20.00,DamageType:"Blast"}

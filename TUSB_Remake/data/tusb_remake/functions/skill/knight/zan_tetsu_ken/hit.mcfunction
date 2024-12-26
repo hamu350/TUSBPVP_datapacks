@@ -9,7 +9,8 @@ scoreboard players operation @s MPConsumption = @s CurrentModeCost
 ### MPチェック
 function tusb_remake:skill/check_mp/
 
-tag @s add This
+execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
 execute if score _ ActivatedSkill matches 1250..1259 run function tusb_remake:skill/knight/zan_tetsu_ken/apply
+tag @e[tag=This] remove This
