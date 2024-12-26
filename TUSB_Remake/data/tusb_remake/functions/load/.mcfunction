@@ -270,19 +270,32 @@ scoreboard objectives add Time_limit dummy {"text": "残り時間"}
 scoreboard objectives add remaining dummy {"text": "残り残機"}
 
 ### チーム
-team add FriendlyTeam
-team modify FriendlyTeam color green
-team modify FriendlyTeam friendlyFire false
-team modify FriendlyTeam seeFriendlyInvisibles true
-team modify FriendlyTeam collisionRule never
-team modify FriendlyTeam deathMessageVisibility always
-team modify FriendlyTeam deathMessageVisibility always
-team modify FriendlyTeam nametagVisibility always
+team add NormalTeam
+team modify NormalTeam color white
+team modify NormalTeam friendlyFire true
+team modify NormalTeam seeFriendlyInvisibles true
+team modify NormalTeam collisionRule never
+team modify NormalTeam deathMessageVisibility always
+team modify NormalTeam nametagVisibility always
 team add Yellow
 team modify Yellow color yellow
 team modify Yellow collisionRule never
 team add NoCollision
 team modify NoCollision collisionRule never
+team add RedTeam
+team modify RedTeam color red
+team modify RedTeam friendlyFire false
+team modify RedTeam seeFriendlyInvisibles true
+team modify RedTeam collisionRule never
+team modify RedTeam deathMessageVisibility always
+team modify RedTeam nametagVisibility always
+team add BlueTeam
+team modify BlueTeam color blue
+team modify BlueTeam friendlyFire false
+team modify BlueTeam seeFriendlyInvisibles true
+team modify BlueTeam collisionRule never
+team modify BlueTeam deathMessageVisibility always
+team modify BlueTeam nametagVisibility always
 
 ### ゲームルール / ワールド設定
 gamerule logAdminCommands false

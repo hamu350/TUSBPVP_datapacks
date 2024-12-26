@@ -52,3 +52,11 @@ execute positioned -2733 88 -383 align xyz if entity @s[dz=1] run advancement gr
 ### コオリトカス
 # execute positioned 203 147 -20 align xyz if entity @s[dx=0] if entity @s[advancements={tusb_remake:press={unlock_tocult=false}}] run function tusb_remake:portal/warp/overworld/unlock_tocult/
 # execute positioned 203 147 -20 align xyz if entity @s[dx=0] run advancement grant @s only tusb_remake:press unlock_tocult
+
+### スキル設定場のチーム変更
+execute positioned -2738 89 -385 align xyz if entity @s[dx=0] if entity @s[advancements={tusb_remake:press={team_red=false}}] run function tusb_remake:team/red
+execute positioned -2738 89 -385 align xyz if entity @s[dx=0] run advancement grant @s only tusb_remake:press team_red
+execute positioned -2738 89 -390 align xyz if entity @s[dx=0] if entity @s[advancements={tusb_remake:press={team_blue=false}}] run function tusb_remake:team/blue
+execute positioned -2738 89 -390 align xyz if entity @s[dx=0] run advancement grant @s only tusb_remake:press team_blue
+execute positioned -2736 89 -388 align xyz if entity @s[dz=1] if entity @s[advancements={tusb_remake:press={team_leave=false}}] run function tusb_remake:team/remove
+execute positioned -2736 89 -388 align xyz if entity @s[dz=1] run advancement grant @s only tusb_remake:press team_leave
