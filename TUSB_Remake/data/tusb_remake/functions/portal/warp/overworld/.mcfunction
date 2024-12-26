@@ -14,6 +14,7 @@ execute positioned -1935 111 -137 align xyz if entity @s[dx=0,dy=1,dz=1] run tp 
 # execute positioned -2715 91 -389 align xyz if entity @s[dx=0,dy=0,dz=0] run tp @s -2795 75.5 -381
 # execute positioned -2795 78 -381 align xyz if entity @s[dx=0,dy=0,dz=0] run tp @s -2715 88.5 -389
 ### スキル設定場からチュートリアル
+execute positioned -2711 91 -383 align xyz if entity @s[dx=1,dy=0,dz=1] run clear @s
 execute positioned -2711 91 -383 align xyz if entity @s[dx=1,dy=0,dz=1] run tp @s -1911.0 114.0 -136.0
 
 ### スキル設定場からエクストラドメイン

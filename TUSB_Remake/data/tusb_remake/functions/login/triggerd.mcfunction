@@ -4,6 +4,9 @@
 #
 #
 
+#> スキル設定
+execute if score @s ShowMenu matches 1 run function tusb_remake:player/display/skillset
+
 #> ゲーム設定
 execute if score @s ShowMenu matches 10 run function tusb_remake:display/gamesetting
 

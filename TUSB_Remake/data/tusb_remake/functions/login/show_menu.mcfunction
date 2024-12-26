@@ -4,6 +4,6 @@
 #
 #
 
-tellraw @s [{"translate":"[INFO] 職業変更やゲーム設定ができます。"}]
+tellraw @s [{"translate":"[INFO] 職業、スキルの変更やゲーム設定ができます。"}]
 scoreboard players enable @s ShowMenu
 function tusb_remake:login/re_show
