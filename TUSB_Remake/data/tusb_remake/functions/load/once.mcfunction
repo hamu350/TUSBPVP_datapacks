@@ -5,7 +5,7 @@
 
 scoreboard objectives add Settings dummy "設定"
 ### 観光モード
-scoreboard players set SightseeingDeath Settings 1
+scoreboard players set SightseeingDeath Settings 0
 ### デバッグモード
 scoreboard players set Debug Settings 0
 ### 祈り有効モード
@@ -32,7 +32,7 @@ bossbar set tusb_pvp:time_limit visible false
 
 ### 最初は夜固定
 
-### 最初はキープインベントリあり
+### 基本キープインベントリあり
 gamerule keepInventory true
 data modify storage tusb_remake: settings.is_sightseeing set value true
 
