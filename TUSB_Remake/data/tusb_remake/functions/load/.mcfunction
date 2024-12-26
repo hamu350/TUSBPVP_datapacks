@@ -264,7 +264,7 @@ scoreboard objectives add SneakingTime minecraft.custom:sneak_time {"text":"ス�
 scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 
 # 時間制限ボスバー
-scoreboard objectives add TimeLimit dummy {"text": "残り時間"}
+scoreboard objectives add time_limit dummy {"text": "残り時間"}
 
 # 残り残機
 scoreboard objectives add Remaining dummy {"text": "残り残機"}

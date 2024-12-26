@@ -2,5 +2,5 @@
 # 残機制オン
 
 tellraw @a {"text": "残機制モードになりました","bold":true,"color": "dark_red"}
-data modify storage tusb_pvp: Settings.TimeLimit set value 0b
-data modify storage tusb_pvp: Settings.DeathMatch set value 1b
+data modify storage tusb_pvp: settings.time_limit set value 0b
+data modify storage tusb_pvp: settings.death_match set value 1b
