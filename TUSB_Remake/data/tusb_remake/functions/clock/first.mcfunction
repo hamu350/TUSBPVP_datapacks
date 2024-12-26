@@ -11,7 +11,7 @@ execute as @a[scores={Drop=1..}] at @s anchored eyes positioned ^ ^ ^ run kill @
 scoreboard players reset @a Drop
 
 ### アスレチックのバードケージでエリトラの飛べるタイミングを昔と同じにする
-execute as @a[predicate=tusb_remake:bird_in_cage] run function tusb_remake:athletic/bird_cage/modify_elytra
+# execute as @a[predicate=tusb_remake:bird_in_cage] run function tusb_remake:athletic/bird_cage/modify_elytra
 
 ### 魔法のブロックの共通処理
 execute as @e[type=item_frame,tag=MagicBlock] at @s run function tusb_remake:skill/summoner/magic_block/check

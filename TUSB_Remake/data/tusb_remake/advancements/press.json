@@ -11,6 +11,15 @@
 		},
 		"unlock_tocult": {
 			"trigger": "minecraft:impossible"
+		},
+		"team_red": {
+			"trigger": "minecraft:impossible"
+		},
+		"team_blue": {
+			"trigger": "minecraft:impossible"
+		},
+		"team_leave": {
+			"trigger": "minecraft:impossible"
 		}
 	},
 	"requirements": [
@@ -18,7 +27,10 @@
 			"skill_settings_show_current",
 			"trading_show_status",
 			"trading_show_conquer",
-			"unlock_tocult"
+			"unlock_tocult",
+			"team_red",
+			"team_blue",
+			"team_leave"
 		]
 	]
 }
