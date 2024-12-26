@@ -11,7 +11,7 @@ summon minecraft:iron_golem ~ ~ ~ {CustomName:'"(ペット)ゴーレム"',Custom
 execute if entity @s[team=RedTeam] run team join RedTeam @e[type=iron_golem,limit=1,sort=nearest,distance=0]
 execute if entity @s[team=BlueTeam] run team join BlueTeam @e[type=iron_golem,limit=1,sort=nearest,distance=0]
 execute if entity @s[team=NomalTeam] run team join NomalTeam @e[type=iron_golem,limit=1,sort=nearest,distance=0]
-summon area_effect_cloud ~ ~ ~ {Duration:10,Radius:0.2f,ReapplicationDelay:5,DurationOnUse:5,Tags:["GolemAEC"],Particle:"block air"}
+summon area_effect_cloud ~ ~ ~ {Duration:2147483647,Radius:0.01f,Tags:["GolemAEC"],Particle:"block air"}
 data modify entity @e[tag=GolemAEC,distance=0,limit=1,sort=nearest] Owner set from entity @s UUID
 ride @e[tag=GolemAEC,limit=1,sort=nearest,distance=0] mount @e[type=iron_golem,limit=1,sort=nearest,distance=0]
 
