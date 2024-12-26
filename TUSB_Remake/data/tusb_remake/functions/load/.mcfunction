@@ -252,6 +252,7 @@ scoreboard objectives add RadarVision dummy "レーダーヴィジョン効果�
 scoreboard objectives add ProjectileSkill dummy "投擲物に付与したスキルとレベル"
 scoreboard objectives add PotentialSkill dummy "Mobに発動する可能性のあるスキル"
 
+# プレイヤーID
 scoreboard objectives add PlayerId dummy
 
 # メニュートリガースコア
@@ -262,6 +263,11 @@ scoreboard objectives add SkillSetting trigger {"text": "スキル設定表示"}
 scoreboard objectives add SneakingTime minecraft.custom:sneak_time {"text":"スニーク時間"}
 scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 
+# 時間制限ボスバー
+scoreboard objectives add Time_limit dummy {"text": "残り時間"}
+
+# 残り残機
+scoreboard objectives add remaining dummy {"text": "残り残機"}
 
 ### チーム
 team add FriendlyTeam

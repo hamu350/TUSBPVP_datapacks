@@ -82,3 +82,7 @@ execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~
 execute as @a[gamemode=!spectator] at @s if block ~ 0 ~ minecraft:barrier if blocks ~ 0 ~ ~ 254 ~ ~ ~1 ~ all run kill @s
 
 execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
+
+## 時間制限ボスバー
+execute if data storage tusb_pvp: Settings{battle:1b} if data storage tusb_pvp: Settings{time_limit:1b} store result bossbar tusb_pvp:time_limit value run scoreboard players get _ Time_limit
+execute if data storage tusb_pvp: Settings{battle:1b} if data storage tusb_pvp: Settings{time_limit:1b} run scoreboard players remove _ Time_limit 1
