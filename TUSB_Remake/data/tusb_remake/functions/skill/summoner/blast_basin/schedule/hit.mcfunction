@@ -11,6 +11,7 @@ playsound minecraft:entity.generic.explode master @a[distance=..16] ~ ~ ~ 1 1 0
 effect give @s minecraft:saturation 10 127 true
 
 ### ダメージと吹き飛ばしを与える
-execute as @e[distance=..8,tag=!This,tag=Enemy] run function tusb_remake:skill/archer/blast_shot/hit/damage1
+execute as @e[distance=..8,tag=!Owner,predicate=tusb_remake:player] run function tusb_remake:skill/archer/blast_shot/hit/damage1
+
 
 data modify storage tusb_remake: hit set value true

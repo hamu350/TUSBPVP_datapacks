@@ -9,7 +9,10 @@ particle minecraft:instant_effect ~ ~1 ~ 0.5 0.5 0.5 0.1 30 force
 
 ### スノーを召喚
 ### リメイク：HP少しアップ
-summon minecraft:snow_golem ~ ~ ~ {CustomName:'"(ペット)スノー"',CustomNameVisible:true,ArmorItems:[{id:"minecraft:snowball",Count:1b,tag:{Enchantments:[{id:"minecraft:feather_falling",lvl:255s},{id:"minecraft:blast_protection",lvl:10s}]}},{},{},{id:"minecraft:snowball",Count:1b}],ArmorDropChances:[-1E40f,-1E40f,-1E40f,-1E40f],Attributes:[{Name:"minecraft:generic.follow_range",Base:32d},{Name:"minecraft:generic.movement_speed",Base:0.32d},{Name:"minecraft:generic.armor",Base:10d},{Name:"generic.max_health",Base:50d}],Health:50f,Team:FriendlyTeam,DeathLootTable:"minecraft:empty"}
+##########
+## クビ ##
+##########
+#summon minecraft:snow_golem ~ ~ ~ {CustomName:'"(ペット)スノー"',CustomNameVisible:true,ArmorItems:[{id:"minecraft:snowball",Count:1b,tag:{Enchantments:[{id:"minecraft:feather_falling",lvl:255s},{id:"minecraft:blast_protection",lvl:10s}]}},{},{},{id:"minecraft:snowball",Count:1b}],ArmorDropChances:[-1E40f,-1E40f,-1E40f,-1E40f],Attributes:[{Name:"minecraft:generic.follow_range",Base:32d},{Name:"minecraft:generic.movement_speed",Base:0.32d},{Name:"minecraft:generic.armor",Base:10d},{Name:"generic.max_health",Base:50d}],Health:50f,DeathLootTable:"minecraft:empty"}
 
 # ### スノーの判定を有効化
 # function tusb_remake:skill/archer/decel_trap/schedule/
