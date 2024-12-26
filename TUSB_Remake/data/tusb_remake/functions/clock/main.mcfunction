@@ -15,7 +15,7 @@ execute as @a[scores={TradedVillager=1..}] run function tusb_remake:trade_event/
 ### リスポーン満腹度維持処理
 execute as @a[scores={HP=..0,Hunger=..-1}] at @s run function tusb_remake:player/death/
 ### 生き返ったときは満腹度調整処理
-execute as @a[scores={HP=1..,Hunger=0..}] run function tusb_remake:player/apply_hunger
+ execute as @a[scores={HP=1..,Hunger=0..}] run function tusb_remake:player/apply_hunger
 
 ### 経験値取得処理
 execute as @a[nbt={Inventory:[{id:"minecraft:nether_star"}]}] at @s run function tusb_remake:player/pick_exp/

@@ -13,7 +13,7 @@ scoreboard players operation @s Hunger = @s Food
 # execute unless data storage tusb_remake: settings{is_sightseeing:true} run clear @s
 
 ### ネザーアスレチック
-# execute as @s[predicate=tusb_remake:area/nether_trial] at @s run function tusb_remake:player/death/in_nether_trial
+execute as @s[predicate=tusb_remake:area/nether_trial] at @s run function tusb_remake:player/death/in_nether_trial
 
 ### 死の宣告がかかっていたら消す
 tag @s[tag=Doom] remove Doom
