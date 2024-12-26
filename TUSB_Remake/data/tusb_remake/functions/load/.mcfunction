@@ -264,10 +264,13 @@ scoreboard objectives add SneakingTime minecraft.custom:sneak_time {"text":"ス�
 scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 
 # 時間制限ボスバー
-scoreboard objectives add Time_limit dummy {"text": "残り時間"}
+scoreboard objectives add TimeLimit dummy {"text": "残り時間"}
 
 # 残り残機
-scoreboard objectives add remaining dummy {"text": "残り残機"}
+scoreboard objectives add Remaining dummy {"text": "残り残機"}
+
+# キルカウント
+scoreboard objectives add KillCount playerKillCount {"text": "キルカウント"}
 
 ### チーム
 team add NormalTeam
@@ -322,7 +325,7 @@ worldborder center 0 0
 worldborder set 7000
 
 ### setdisplay
-scoreboard objectives setdisplay list Level
+scoreboard objectives setdisplay list KillCount
 scoreboard objectives setdisplay sidebar MP
 scoreboard objectives setdisplay belowName HP
 

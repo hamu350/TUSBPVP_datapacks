@@ -20,6 +20,12 @@
 		},
 		"team_leave": {
 			"trigger": "minecraft:impossible"
+		},
+		"tower_bank": {
+			"trigger": "minecraft:impossible"
+		},
+		"tower_bank_exit": {
+			"trigger": "minecraft:impossible"
 		}
 	},
 	"requirements": [
@@ -30,7 +36,9 @@
 			"unlock_tocult",
 			"team_red",
 			"team_blue",
-			"team_leave"
+			"team_leave",
+			"tower_bank",
+			"tower_bank_exit"
 		]
 	]
 }

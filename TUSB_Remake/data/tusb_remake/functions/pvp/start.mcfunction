@@ -6,4 +6,4 @@ execute unless data storage tusb_pvp: Settings{Teaming:true} run function tusb_r
 
 execute if data storage tusb_pvp: Settings{Time_Limit:true} run function tusb_remake:pvp/time_limit/
 
-execute if data storage tusb_pvp: Settings{Deathmatch:true} run function tusb_remake:pvp/deathmatch/
+execute if data storage tusb_pvp: Settings{DeathMatch:true} run function tusb_remake:pvp/deathmatch/
