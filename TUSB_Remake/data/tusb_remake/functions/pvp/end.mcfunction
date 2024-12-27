@@ -1,6 +1,6 @@
 #> tusb_remake:pvp/end
 
-
+data modify storage tusb_pvp: Battle set value 0b
 function tusb_remake:pvp/disable_skill
 bossbar set tusb_pvp:time_limit visible false
 execute if data storage tusb_pvp: settings{time_limit:1b} run scoreboard players operation _ KillCount > @a KillCount
@@ -9,4 +9,6 @@ execute as @a if data storage tusb_pvp: settings{death_match:1b} if score @s Rem
 title @a title {"translate": "%1$sの勝利","with":[{"selector": "@a[tag=Winner]"}]}
 scoreboard players add @a[tag=Winner] WinCount 1
 tag @a[tag=Winner] remove Winner
+data modify storage tusb_pvp: settings.time_limit set value 0b
+data modify storage tusb_pvp: settings.death_match set value 0b
 tp @a -2724.0 88 -382.0

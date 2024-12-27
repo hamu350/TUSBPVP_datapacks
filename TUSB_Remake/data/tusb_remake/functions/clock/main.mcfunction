@@ -91,7 +91,7 @@ execute as @a unless data storage tusb_pvp: {Battle:1b} run effect give @s satur
 execute as @a[tag=Ready] at @s run particle end_rod ~ ~1 ~ 0.3 0.3 0.3 0.03 1 force @a
 
 ### バトルスタート
-execute as @a at @s unless data storage tusb_pvp: {Battle:1b} unless entity @a[tag=!Ready,gamemode=!spectator] run function tusb_remake:pvp/start
+execute as @a at @s unless data storage tusb_pvp: settings{time_limit:0b} unless data storage tusb_pvp: settings{time_limit:0b} unless data storage tusb_pvp: {Battle:1b} unless entity @a[tag=!Ready,gamemode=!spectator] run function tusb_remake:pvp/start
 
 ### バトルエンド
 execute as @a at @s if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{time_limit:1b} if score _ TimeLimit matches 0 run function tusb_remake:pvp/end
