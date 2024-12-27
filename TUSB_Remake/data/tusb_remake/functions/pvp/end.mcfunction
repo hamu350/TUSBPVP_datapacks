@@ -9,5 +9,4 @@ execute if data storage tusb_pvp: settings{death_match:1b} if score @s Remaining
 title @a title {"translate": "%1$sの勝利","with":[{"selector": "@a[tag=Winner]"}]}
 scoreboard players add @a[tag=Winner] WinCount 1
 tag @a[tag=Winner] remove Winner
-scoreboard players set @a KillCount 0
 tp @a -2724.0 88 -382.0
