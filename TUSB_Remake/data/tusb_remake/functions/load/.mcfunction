@@ -264,13 +264,17 @@ scoreboard objectives add SneakingTime minecraft.custom:sneak_time {"text":"ス�
 scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 
 # 時間制限ボスバー
-scoreboard objectives add time_limit dummy {"text": "残り時間"}
+scoreboard objectives add TimeLimit dummy {"text": "残り時間"}
 
 # 残り残機
 scoreboard objectives add Remaining dummy {"text": "残り残機"}
 
 # キルカウント
 scoreboard objectives add KillCount playerKillCount {"text": "キルカウント"}
+
+# 開始時間
+scoreboard objectives add CountDown dummy {"text": "開始まで"}
+
 
 ### チーム
 team add NormalTeam
@@ -314,6 +318,8 @@ gamerule doTileDrops true
 gamerule doInsomnia true
 gamerule doWardenSpawning true
 gamerule doTraderSpawning true
+gamerule doPatrolSpawning true
+gamerule doInsomnia false
 gamerule randomTickSpeed 3
 gamerule showDeathMessages true
 gamerule spawnRadius 0

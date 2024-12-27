@@ -26,6 +26,9 @@
 		},
 		"tower_bank_exit": {
 			"trigger": "minecraft:impossible"
+		},
+		"ready": {
+			"trigger": "minecraft:impossible"
 		}
 	},
 	"requirements": [
@@ -38,7 +41,8 @@
 			"team_blue",
 			"team_leave",
 			"tower_bank",
-			"tower_bank_exit"
+			"tower_bank_exit",
+			"ready"
 		]
 	]
 }

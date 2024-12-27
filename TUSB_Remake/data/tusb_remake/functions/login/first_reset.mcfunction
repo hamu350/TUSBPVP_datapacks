@@ -19,7 +19,7 @@ data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.tutorial 
 function tusb_remake:random/reset
 
 ### お試しセットを有効にする
-tag @s add TrialSet
+# tag @s add TrialSet
 ### トカルトコルデ初回松明イベントを有効にする
 # tag @s add ISFUnreached
 

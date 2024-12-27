@@ -37,3 +37,6 @@ execute positioned -132 81 1067 align xyz if entity @s[dx=0,dy=0,dz=1] positione
 execute positioned -261 86 1047 align xyz if entity @s[dx=1,dy=0,dz=0] positioned -530 149 796 run function tusb_remake:athletic/reward
 ### ０
 execute positioned -408 24 879 align xyz if entity @s[dx=0,dy=0,dz=0] positioned -518 140 816 run function tusb_remake:athletic/reward
+
+### 帰還
+execute positioned -505 138 803 align xyz if entity @s[dx=0] in minecraft:overworld run tp @s -2724.0 88 -382.0 90 ~

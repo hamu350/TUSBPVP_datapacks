@@ -82,3 +82,17 @@ execute as @a at @s unless score @s ShowMenu matches 0 run function tusb_remake:
 ### スキル変更設定
 execute as @a at @s unless score @s ChangeSkillSet matches 0 run function tusb_remake:player/display/skillset
 execute as @a at @s unless score @s SkillSetting matches 0 run function tusb_remake:player/display/skilldisplay
+
+### バトル外無敵
+execute as @a unless data storage tusb_pvp: {Battle:1b} run effect give @s resistance infinite 4 true
+execute as @a unless data storage tusb_pvp: {Battle:1b} run effect give @s saturation infinite 0 true
+
+### 準備完了！
+execute as @a[tag=Ready] at @s run particle end_rod ~ ~1 ~ 0.3 0.3 0.3 0.03 1 force @a
+
+### バトルスタート
+execute as @a at @s unless data storage tusb_pvp: {Battle:1b} unless entity @a[tag=!Ready,gamemode=!spectator] run function tusb_remake:pvp/start
+
+### バトルエンド
+execute as @a at @s if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{time_limit:1b} if score _ TimeLimit matches 0 run function tusb_remake:pvp/end
+execute as @a at @s if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if entity @a[scores={Remaining=0}] run function tusb_remake:pvp/end

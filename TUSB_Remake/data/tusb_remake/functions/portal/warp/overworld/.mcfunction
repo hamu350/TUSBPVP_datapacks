@@ -66,3 +66,8 @@ execute positioned -2738 89 -390 align xyz if entity @s[dx=0] if entity @s[advan
 execute positioned -2738 89 -390 align xyz if entity @s[dx=0] run advancement grant @s only tusb_remake:press team_blue
 execute positioned -2736 89 -388 align xyz if entity @s[dz=1] if entity @s[advancements={tusb_remake:press={team_leave=false}}] run function tusb_remake:team/remove
 execute positioned -2736 89 -388 align xyz if entity @s[dz=1] run advancement grant @s only tusb_remake:press team_leave
+
+execute positioned -2719 85 -365 align xyz if entity @s[dx=0] in minecraft:the_nether run tp @s -274.5 23.5 879.5 -90 ~
+
+execute positioned -2738 89 -380 align xyz if entity @s[dx=0] if entity @s[advancements={tusb_remake:press={ready=false}}] run function tusb_remake:pvp/ready/
+execute positioned -2738 89 -380 align xyz if entity @s[dx=0] run advancement grant @s only tusb_remake:press ready

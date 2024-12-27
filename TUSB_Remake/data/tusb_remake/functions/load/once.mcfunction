@@ -25,7 +25,6 @@ data modify storage tusb_remake: conquer.count set value {skyland:0,nether:0,end
 data modify storage tusb_remake: nether_boss_count set value 1
 data modify storage tusb_remake: nether_boss_clear set value false
 
-bossbar remove tusb_pvp:time_limit
 bossbar add tusb_pvp:time_limit "残り時間"
 bossbar set tusb_pvp:time_limit color white 
 bossbar set tusb_pvp:time_limit visible false

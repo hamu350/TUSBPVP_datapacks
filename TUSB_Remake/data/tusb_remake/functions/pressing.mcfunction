@@ -23,4 +23,6 @@ execute if entity @s[advancements={tusb_remake:press={team_red=true}}] if predic
 execute if entity @s[advancements={tusb_remake:press={team_blue=true}}] if predicate tusb_remake:area/cloudia positioned -2738 89 -390 align xyz unless entity @s[dx=0] run advancement revoke @s only tusb_remake:press team_blue
 execute if entity @s[advancements={tusb_remake:press={team_leave=true}}] if predicate tusb_remake:area/cloudia positioned -2736 89 -388 align xyz unless entity @s[dz=1] run advancement revoke @s only tusb_remake:press team_leave
 
+execute if entity @s[advancements={tusb_remake:press={ready=true}}] if predicate tusb_remake:area/cloudia positioned -2738 89 -380 align xyz unless entity @s[dx=0] run advancement revoke @s only tusb_remake:press ready
+
 advancement revoke @s only tusb_remake:pressing
