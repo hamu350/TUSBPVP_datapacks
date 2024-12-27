@@ -276,6 +276,8 @@ scoreboard objectives add PreKillCount dummy {"text":"前tickのキルカウン�
 # 開始時間
 scoreboard objectives add CountDown dummy {"text": "開始まで"}
 
+#勝利数
+scoreboard objectives add WinCount dummy {"text": "勝利数"}
 
 ### チーム
 team add NormalTeam

@@ -14,3 +14,5 @@ scoreboard players reset @a ModeChangeB
 scoreboard players enable @a ModeChangeB
 scoreboard players set @a ModeChangeB -1
 data modify storage tusb_pvp: Battle set value 0b
+
+scoreboard objectives setdisplay list WinCount
