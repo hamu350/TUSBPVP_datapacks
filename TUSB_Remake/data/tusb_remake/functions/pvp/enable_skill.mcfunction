@@ -9,3 +9,5 @@ scoreboard players reset @a DamageDealt
 scoreboard players reset @a DamageDealtAbsorbed
 scoreboard players reset @a DamageDealtResisted
 data modify storage tusb_pvp: Battle set value 1b
+
+scoreboard objectives setdisplay list KillCount
