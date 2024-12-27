@@ -271,6 +271,7 @@ scoreboard objectives add Remaining dummy {"text": "残り残機"}
 
 # キルカウント
 scoreboard objectives add KillCount playerKillCount {"text": "キルカウント"}
+scoreboard objectives add PreKillCount dummy {"text":"前tickのキルカウント"}
 
 # 開始時間
 scoreboard objectives add CountDown dummy {"text": "開始まで"}

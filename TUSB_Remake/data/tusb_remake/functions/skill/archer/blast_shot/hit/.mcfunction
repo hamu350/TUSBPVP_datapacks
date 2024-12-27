@@ -7,6 +7,7 @@ particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force
 
 scoreboard players operation _ PotentialSkill = @s PotentialSkill
 
+execute on passengers on origin run function tusb_remake:skill/use_damage_skill
 execute on passengers on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
 
 ### リメイク：ダメージを平均化して少しアップ

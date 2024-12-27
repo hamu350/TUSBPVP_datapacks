@@ -8,6 +8,7 @@ execute store result storage score_damage: Argument.Damage double 0.01 run data 
 
 scoreboard players operation _ PotentialSkill = @s ProjectileSkill
 
+execute on origin run function tusb_remake:skill/use_damage_skill
 execute on passengers on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
 
 ### リメイク：エンチェイスの範囲を拡大

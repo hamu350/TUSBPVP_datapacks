@@ -4,6 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 data modify storage tusb_remake: hit set value false
+execute on passengers on origin run function tusb_remake:skill/use_damage_skill
 execute on passengers on origin at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/owner
 execute positioned ~-0.5 ~ ~-0.5 as @e[dy=0,tag=!Owner,predicate=tusb_remake:player,nbt=!{ActiveEffects:[{Id:23}]}] at @s run function tusb_remake:skill/summoner/heat_basin/schedule/hit
 tag @e[tag=Owner] remove Owner
