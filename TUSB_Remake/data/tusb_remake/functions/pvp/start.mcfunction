@@ -2,7 +2,7 @@
 
 execute if data storage tusb_pvp: settings{time_limit:true} run function tusb_remake:pvp/time_limit/
 
-scoreboard players set _ CountDown 400
+scoreboard players set _ CountDown 21
 
 tellraw @s {"text": "20秒後に開始します・・・"}
 effect clear @s
