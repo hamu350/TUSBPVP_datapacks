@@ -15,6 +15,8 @@ scoreboard players operation @s Hunger = @s Food
 ### ネザーアスレチック
 execute as @s[predicate=tusb_remake:area/nether_trial] at @s run function tusb_remake:player/death/in_nether_trial
 
+execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if score @s Remaining matches 1.. run scoreboard players remove @s Remaining 1
+
 ### 死の宣告がかかっていたら消す
 tag @s[tag=Doom] remove Doom
 ### リレイズの効果がかかっていたらレイズをかける

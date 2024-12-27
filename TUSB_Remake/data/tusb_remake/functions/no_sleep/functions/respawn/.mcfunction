@@ -15,8 +15,10 @@ execute unless entity @s[tag=TeleportWorldSpawn] run function no_sleep:respawn/r
 ### タグがついていたら初期スポに飛ばす
 execute if entity @s[tag=TeleportWorldSpawn] run schedule function no_sleep:respawn/check/teleport/ 1t append
 
-execute if data storage tusb_pvp: {Battle:1b} run gamemode spectator @s
-execute if data storage tusb_pvp: {Battle:1b} run tag @s add SightSeeing
+execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if score @s Remaining matches 0 run title @s actionbar {"text": "残機がなくなってしまった・・・","color": "dark_red"}
+execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if score @s Remaining matches 0 run gamemode spectator @s
+execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if score @s Remaining matches 0 run tag @s add SightSeeing
+execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if score @s Remaining matches 1.. run title @s actionbar {"translate": "残り残機 %1$s","with": [{"score": {"name": "@s","objective": "Remaining"}}]}
 
 advancement revoke @s only no_sleep:death
 advancement revoke @s only no_sleep:respawn
