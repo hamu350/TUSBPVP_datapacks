@@ -2,4 +2,5 @@
 
 function tusb_remake:pvp/enable_skill
 scoreboard players set @a KillCount 0
-execute if data storage tusb_pvp: settings{death_match:true} run function tusb_remake:pvp/deathmatch/
+
+execute as @a at @s run playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ 1.0 0.8 0.0
