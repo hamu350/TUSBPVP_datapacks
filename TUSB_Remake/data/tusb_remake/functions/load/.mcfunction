@@ -307,6 +307,9 @@ team modify BlueTeam collisionRule never
 team modify BlueTeam deathMessageVisibility always
 team modify BlueTeam nametagVisibility always
 
+#ステージ初期座標用ストレージ
+execute unless data storage tusb_pvp: StagePos run data modify storage tusb_pvp: StagePos set value [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+
 ### ゲームルール / ワールド設定
 gamerule logAdminCommands false
 gamerule commandBlockOutput false
