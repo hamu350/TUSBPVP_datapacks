@@ -6,7 +6,7 @@
 ### レベルが49以下の場合だけレベルアップ
 scoreboard players add @s[scores={Level=..0}] Level 50
 ### 最大MPはレベルに関わらずあがる
-scoreboard players set @s MPMax 150
+scoreboard players set @s MPMax 100
 
 ### MPを回復
 scoreboard players operation @s MP = @s MPMax

@@ -2,3 +2,4 @@
 # 残機3設定
 tellraw @a [{"text": "残機が"},{"text":"３","color": "light_purple"},{"text": "になりました"}]
 scoreboard players set @a Remaining 3
+scoreboard players reset _ TimeLimit
