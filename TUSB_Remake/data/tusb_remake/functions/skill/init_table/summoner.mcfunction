@@ -41,9 +41,9 @@ data modify storage tusb_remake: _.21 set value {name:["金タライ"],level:[3]
 data modify storage tusb_remake: _.22 set value {name:["ディールα","ディールβ","ディールγ"],level:[8,28,48],cost:20,description:[["羊毛に乗っている敵にダメージを与える。"]],condition:"ニンジン付きの棒を持って右クリック",range:[30]}
 data modify storage tusb_remake: _.23 set value {name:["ぽんぽんα","ぽんぽんβ"],level:[15,35],cost:10,description:[["周囲のペットを回復する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
 data modify storage tusb_remake: _.24 set value {name:["つんつんα","つんつんβ"],level:[18,38],cost:10,description:[["ペットに命令する。","ニンジン付き：支援しろ！","歪んだキノコ付き：技を使え！"]],condition:"〇〇付きの棒を持って右クリック",range:[15]}
-data modify storage tusb_remake: _.25 set value {name:["あつあつタライ"],level:[23],cost:10,description:[["周囲の敵の頭上にあつあつタライを召喚する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
+data modify storage tusb_remake: _.25 set value {name:["あつあつタライ"],level:[23],cost:15,description:[["周囲の敵の頭上にあつあつタライを召喚する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
 data modify storage tusb_remake: _.26 set value {COMMENT:"/* 効果時間が文字列なので正常に反映できない可能性あり */",name:["サモンB:オブシディアン"],level:[26],cost:20,description:[["黒曜石を召喚する。","上空では長く保たない。"]],condition:"ニンジン付きの棒を持って右クリック",duration:"1～25"}
-data modify storage tusb_remake: _.27 set value {name:["ぽむぽむハナビ"],level:[37],cost:10,description:[["ぽむぽむハナビを召喚する。"]],condition:"ニンジン付きの棒を持って右クリック"}
+data modify storage tusb_remake: _.27 set value {name:["ぽむぽむハナビ"],level:[37],cost:35,description:[["ぽむぽむハナビを召喚する。"]],condition:"ニンジン付きの棒を持って右クリック"}
 data modify storage tusb_remake: _.28 set value {COMMENT:"/* 26@6mと同様 */",name:["サモンB:エンダーチェスト"],level:[39],cost:40,description:[["エンダーチェストを召喚する。","上空では長く保たない。"]],condition:"ニンジン付きの棒を持って右クリック",duration:"1～25"}
 data modify storage tusb_remake: _.29 set value {name:["きらきらタライ"],level:[43],cost:15,description:[["周囲の敵の頭上にきらきらタライを召喚する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
 data modify storage tusb_remake: _.30 set value {name:["サモン:ぷちブラック"],level:[50],cost:100,description:[["ぷちブラックホールを召喚する。"]],condition:"ニンジン付きの棒を持って右クリック",duration:[15]}

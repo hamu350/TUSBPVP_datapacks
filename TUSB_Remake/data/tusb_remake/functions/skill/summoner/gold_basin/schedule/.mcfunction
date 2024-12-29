@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 data modify storage tusb_remake: _ set value false
-data modify storage score_damage: Argument set value {Damage:25.00}
+data modify storage score_damage: Argument set value {Damage:15.00f}
 execute as @e[type=falling_block,tag=KanaTarai] at @s run function tusb_remake:skill/summoner/gold_basin/schedule/fly
 
 execute if data storage tusb_remake: {_:true} in minecraft:overworld run schedule function tusb_remake:skill/summoner/gold_basin/schedule/ 1t

@@ -19,4 +19,4 @@ execute if entity @s[tag=PetitBlack] run function tusb_remake:skill/summoner/sum
 execute if entity @s[x_rotation=-90] run function tusb_remake:skill/summoner/magic_block/break
 
 ### まわりのプレイヤーがブロックを壊せないようにする
-effect give @a[distance=..10] minecraft:mining_fatigue 1 127
+#effect give @a[distance=..10] minecraft:mining_fatigue 1 127
