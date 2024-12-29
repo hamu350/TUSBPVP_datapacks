@@ -6,8 +6,7 @@
 data modify storage tusb_remake: drain_result set value false
 function tusb_remake:skill/use_damage_skill
 execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
-execute as @e[distance=..10,type=#tusb_remake:living,tag=!This,limit=1] run function tusb_remake:skill/black_mage/drain/apply
-tag @s remove This
+execute as @e[distance=..10,predicate=tusb_remake:player,tag=!This,limit=1] run function tusb_remake:skill/black_mage/drain/apply
 
 ### ドレインできなかったらMPを返す
 execute if data storage tusb_remake: {drain_result:false} run scoreboard players operation @s MP += @s MPConsumption

@@ -19,7 +19,7 @@ data modify storage tusb_remake: _.5 set value {name:["レイズ"],level:[39],co
 #白魔導士モード
 data modify storage tusb_remake: _.20 set value {name:["ケアル","ケアル","ケアル","ケアル","ケアル"],level:[1,10,25,40,49],cost:10,description:[["自身の体力を回復する。"]],condition:"ニンジン付きの棒を持って右クリック",sneak:{description:[["周囲のプレイヤーの体力を回復する。"]],range:[15]}}
 data modify storage tusb_remake: _.21 set value {name:["ディア","ディア","ディア","ディア","ディア"],level:[3,13,23,33,43],cost:10,description:[["敵単体を回復する。"]],condition:"雪玉を投げる"}
-data modify storage tusb_remake: _.22 set value {name:["フラワーギフト","フラワーギフト","フラワーギフト"],level:[15,30,45],cost:20,description:[["周囲の敵の戦意を低下させる魔法を放つ。"]],condition:"雪玉を投げる",range:[5]}
+data modify storage tusb_remake: _.22 set value {name:["フラワーギフト","フラワーギフト","フラワーギフト"],level:[15,30,45],cost:100,description:[["周囲の敵の戦意を低下させる魔法を放つ。"]],condition:"雪玉を投げる",range:[5]}
 data modify storage tusb_remake: _.23 set value {name:["ホーリー"],level:[50],cost:100,description:[["聖なる力を放ち、周囲の敵にダメージ。","アンデッドには効果が高い。"]],condition:"雪玉を投げる",range:[8]}
 
 data modify storage tusb_remake: skill_table.white_mage set from storage tusb_remake: _

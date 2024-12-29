@@ -10,7 +10,7 @@ particle minecraft:block minecraft:magenta_stained_glass ~ ~0.5 ~ 6 0.2 6 0.1 30
 ### 30 -> 50 -> 75
 execute if score @s ActivatedSkill matches 5230 run data modify storage score_damage: Argument set value {Damage:30.00,DamageType:"Projectile"}
 execute if score @s ActivatedSkill matches 5231 run data modify storage score_damage: Argument set value {Damage:50.00,DamageType:"Projectile"}
-execute if score @s ActivatedSkill matches 5232..5239 run data modify storage score_damage: Argument set value {Damage:75.00,DamageType:"Projectile"}
+execute if score @s ActivatedSkill matches 5232..5239 run data modify storage score_damage: Argument set value {Damage:25.00,DamageType:"Projectile"}
 
 function tusb_remake:skill/use_damage_skill
 execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this

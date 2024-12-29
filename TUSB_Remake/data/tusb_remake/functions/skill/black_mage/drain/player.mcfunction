@@ -12,4 +12,4 @@ execute if score _ ActivatedSkill matches 5240 run effect give @s minecraft:inst
 execute if score _ ActivatedSkill matches 5240 run effect give @s minecraft:absorption 15 0 true
 ### レベル２　💗💗💗💗💗💗💗💗　💛💛💛💛
 execute if score _ ActivatedSkill matches 5241..5249 run effect give @s minecraft:instant_health 1 2 true
-execute if score _ ActivatedSkill matches 5241..5249 run effect give @s minecraft:absorption 15 1 true
+execute if score _ ActivatedSkill matches 5241..5249 run effect give @s minecraft:absorption 20 2 true

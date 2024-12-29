@@ -6,9 +6,11 @@
 playsound minecraft:entity.enderman.teleport master @a[distance=..16] ~ ~ ~ 1 0.5 0
 particle minecraft:witch ~ ~1 ~ 0.2 0.5 0.2 0.1 30 force
 
+data modify storage score_damage: Argument set value {Damage:20.00,DamageType:"Projectile"}
+
 ### レベル１
 execute if score _ ActivatedSkill matches 5240 run effect give @s minecraft:instant_damage 1 1 false
 ### レベル２
-execute if score _ ActivatedSkill matches 5241..5249 run effect give @s minecraft:instant_damage 1 2 false
+execute if score _ ActivatedSkill matches 5241..5249 run function score_damage:api/attack
 
 data modify storage tusb_remake: drain_result set value true
