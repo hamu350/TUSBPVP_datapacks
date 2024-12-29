@@ -4,5 +4,5 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### リメイク：効果時間30秒アップ
-effect give @s minecraft:water_breathing 90 0
+effect give @s minecraft:water_breathing 15 0
 particle effect ~ ~1 ~ 0.5 0.5 0.5 0 30 force

@@ -12,7 +12,7 @@ particle minecraft:cloud ~ ~1 ~ 0.5 0 0.5 0 30 force
 execute if predicate tusb_remake:is_sneaking run effect give @s slow_falling 2 0 true
 execute if predicate tusb_remake:is_sneaking run effect clear @s levitation
 ### スニークしているとき
-execute unless predicate tusb_remake:is_sneaking run effect give @s levitation 2 1 true
+execute unless predicate tusb_remake:is_sneaking run effect give @s levitation 2 4 true
 execute unless predicate tusb_remake:is_sneaking run effect clear @s slow_falling
 
 tellraw @s[scores={Kazakiri=..-1}] {"text":"風切の効果が切れた。","color":"gold"}

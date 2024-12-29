@@ -14,4 +14,4 @@ tellraw @s {"text":"アイアンウィルの効果がかかった。","color":"g
 # scoreboard players operation @s IronWill %= _ TUSB
 ## リメイク：ランダム性をなくしました（平均化）
 scoreboard players set @s IronWill 100
-scoreboard players add @s[scores={ActivatedSkill=1011..}] IronWill 75
+scoreboard players add @s[scores={ActivatedSkill=1010..}] IronWill 75

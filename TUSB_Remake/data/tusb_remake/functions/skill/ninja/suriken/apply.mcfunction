@@ -5,7 +5,7 @@
 
 ### 最近なげた手裏剣のリストがなければ初期化
 function #oh_my_dat:please
-execute unless data storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.SurikenCount run data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.SurikenCount set value [{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0}]
+execute unless data storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.SurikenCount run data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.SurikenCount set value [{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0},{f:0}]
 ### 最近なげた手裏剣の数を取得
 execute store result score _ TUSB if data storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.SurikenCount[{f:1}]
 execute if score _ TUSB matches 6.. run scoreboard players set _ TUSB 5

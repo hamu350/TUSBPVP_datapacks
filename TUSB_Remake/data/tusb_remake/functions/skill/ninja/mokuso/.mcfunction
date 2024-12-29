@@ -11,5 +11,4 @@ scoreboard players set @s WalkOneCm 0
 scoreboard players set @s CrouchOneCm 0
 scoreboard players set @s SprintOneCm 0
 
-execute if score @s ActivatedSkill matches 2040 run effect give @s minecraft:regeneration 15 1
-execute if score @s ActivatedSkill matches 2041..2049 run effect give @s minecraft:regeneration 15 2
+execute if score @s ActivatedSkill matches 2040..2049 run effect give @s minecraft:regeneration 15 2

@@ -8,12 +8,12 @@
 data modify storage tusb_remake: _.0 set value {name:["アイサツ"],level:[1],cost:5,description:[["周囲にアイサツする。敵が居た場合、戦闘に備え次のサポートスキルの消費MPを軽減する。"]],range:"15"}
 data modify storage tusb_remake: _.1 set value {name:["疾風","疾風","疾風"],level:[8,23,38],cost:10,description:[["自身の移動速度を上昇させる。"]],duration:[60]}
 data modify storage tusb_remake: _.2 set value {name:["水遁"],level:[10],cost:15,description:[["自身を潜水に強くする。"]],duration:[60],sneak:{description:[["周囲のプレイヤーを潜水に強くする。"]],range:[15]}}
-data modify storage tusb_remake: _.3 set value {name:["呼魂","呼魂"],level:[15,35],cost:50,description:[["周囲のアイテムを引き寄せる。"]],range:"[10,20]"}
+# data modify storage tusb_remake: _.3 set value {name:["呼魂","呼魂"],level:[15,35],cost:50,description:[["周囲のアイテムを引き寄せる。"]],range:"[10,20]"}
 data modify storage tusb_remake: _.4 set value {name:["黙想","黙想"],level:[17,43],cost:25,description:[["自身の体力を徐々に回復する。移動すると効果がなくなる。"]]}
 data modify storage tusb_remake: _.5 set value {name:["兵糧丸"],level:[20],cost:15,description:[["自身の満腹度・状態異常を回復する。"]]}
 data modify storage tusb_remake: _.6 set value {name:["火遁"],level:[30],cost:25,description:[["自身を炎上に強くする。"]],duration:[60],sneak:{description:[["周囲のプレイヤーを炎上に強くする。"]],range:[15]}}
 data modify storage tusb_remake: _.7 set value {name:["風切","風切"],level:[37,49],cost:20,description:[["風に乗じて浮遊する。"]],duration:[60]}
-data modify storage tusb_remake: _.8 set value {name:["夜駆"],level:[40],cost:20,description:[["時間帯に応じた強化を得る。"]],duration:[60]}
+# data modify storage tusb_remake: _.8 set value {name:["夜駆"],level:[40],cost:20,description:[["時間帯に応じた強化を得る。"]],duration:[60]}
 
 #ニンジャモード
 data modify storage tusb_remake: _.20 set value {name:["手裏剣","手裏剣","手裏剣","手裏剣"],level:[3,18,33,48],cost:2,description:[["手裏剣を投げる。"]],condition:"雪玉を投げる"}

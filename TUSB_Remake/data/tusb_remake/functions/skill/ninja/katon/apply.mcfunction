@@ -4,5 +4,5 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### リメイク：効果時間30秒アップ
-effect give @s minecraft:fire_resistance 90 0
+effect give @s minecraft:fire_resistance 30 0
 particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.1 30 force
