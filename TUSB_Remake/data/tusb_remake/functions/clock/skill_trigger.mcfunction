@@ -26,7 +26,7 @@ execute if data storage tusb_pvp: {Battle:1b} as @a[scores={DamageDealtResisted=
 execute if data storage tusb_pvp: {Battle:1b} as @a[scores={DamageDealt=1..}] at @s run function tusb_remake:skill/hit/
 
 ### スキル設定変更
-execute if data storage tusb_pvp: {Battle:0b} as @a[scores={InstantChangeA=0..}] at @s run function tusb_remake:skill/change/instant/a
-execute if data storage tusb_pvp: {Battle:0b} as @a[scores={InstantChangeB=0..}] at @s run function tusb_remake:skill/change/instant/b
-execute if data storage tusb_pvp: {Battle:0b} as @a[scores={ModeChangeA=0..}] at @s run function tusb_remake:skill/change/mode/a
-execute if data storage tusb_pvp: {Battle:0b} as @a[scores={ModeChangeB=0..}] at @s run function tusb_remake:skill/change/mode/b
+execute as @a[scores={InstantChangeA=0..}] at @s run function tusb_remake:skill/change/instant/a
+execute as @a[scores={InstantChangeB=0..}] at @s run function tusb_remake:skill/change/instant/b
+execute as @a[scores={ModeChangeA=0..}] at @s run function tusb_remake:skill/change/mode/a
+execute as @a[scores={ModeChangeB=0..}] at @s run function tusb_remake:skill/change/mode/b

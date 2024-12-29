@@ -10,6 +10,9 @@ function #oh_my_dat:please
 execute store result score @s HP run data get entity @s Health 100
 ### 前のHPと比較
 execute store result score _ TUSB run data get storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.Health 100
+#前のHPの情報がないまたは負なら前のHPを現在のHPに
+execute if score _ TUSB matches ..0 run scoreboard players operation _ TUSB = @s HP
+execute if score _ TUSB < @s HP run scoreboard players operation _ TUSB = @s HP
 ### 受けたダメージを取得
 scoreboard players operation _ TUSB -= @s HP
 ### ルカナンのレベルに応じて補正

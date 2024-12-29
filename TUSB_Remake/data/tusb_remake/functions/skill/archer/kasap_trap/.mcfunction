@@ -15,7 +15,7 @@ data modify entity @e[tag=Kasap,limit=1,sort=nearest] Owner set from entity @s U
 ### ルカナントラップのレベルを設定
 scoreboard players set @e[distance=..1,tag=Kasap1] KasapLevel 1
 scoreboard players set @e[distance=..1,tag=Kasap2] KasapLevel 2
-scoreboard players set @e[distance=..1,tag=Kasap3] KasapLevel 3
+scoreboard players set @e[distance=..1,tag=Kasap3] KasapLevel 1
 
 ### ルカナントラップの判定を有効化
 function tusb_remake:skill/archer/kasap_trap/schedule/

@@ -12,9 +12,10 @@ execute on passengers on origin at @s as @e[predicate=tusb_remake:player] run fu
 
 ### リメイク：ダメージを平均化して少しアップ
 execute if score _ PotentialSkill matches 3230 run data modify storage score_damage: Argument set value {Damage:20.00,DamageType:"Blast"}
-execute if score _ PotentialSkill matches 3231..3239 run data modify storage score_damage: Argument set value {Damage:45.00,DamageType:"Blast"}
+execute if score _ PotentialSkill matches 3231..3239 run data modify storage score_damage: Argument set value {Damage:25.00,DamageType:"Blast"}
 
 ### ブラストショットのレベルに応じて呼び出し
+summon creeper ~ ~ ~ {ExplosionRadius:-4b,Fuse:0s}
 execute if score _ PotentialSkill matches 3230 as @e[distance=..3,tag=!Owner,predicate=tusb_remake:player] run function tusb_remake:skill/archer/blast_shot/hit/damage1
 execute if score _ PotentialSkill matches 3231..3239 as @e[distance=..6,tag=!Owner,predicate=tusb_remake:player] run function tusb_remake:skill/archer/blast_shot/hit/damage2
 

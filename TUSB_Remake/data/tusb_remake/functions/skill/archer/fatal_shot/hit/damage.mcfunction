@@ -13,17 +13,17 @@ execute store result storage tusb_remake: fatal_shot_count int 0.9999999999 run 
 ### 特殊効果を入れる
 ### 飛べなくなる
 tag @s add FallDown
-effect give @s minecraft:bad_omen 20 127 true
+effect give @s minecraft:bad_omen 10 127 true
 ### 防御力を下げる (ダメージ5倍)
-scoreboard players set @s KasapLevel 4
-scoreboard players set @s KasapTimer 20
+scoreboard players set @s KasapLevel 1
+scoreboard players set @s KasapTimer 10
 tag @s add InKasap
 
 ### ポーション効果
 effect clear @s minecraft:strength
 effect clear @s minecraft:fire_resistance
 effect clear @s minecraft:water_breathing
-effect give @s minecraft:slowness 20 19
-effect give @s minecraft:weakness 20 19
-effect give @s levitation 20 130
-effect give @s jump_boost 20 130
+effect give @s minecraft:slowness 10 19
+effect give @s minecraft:weakness 10 19
+effect give @s levitation 10 130
+effect give @s jump_boost 10 130
