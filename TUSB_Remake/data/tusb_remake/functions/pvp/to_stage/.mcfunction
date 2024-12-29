@@ -13,9 +13,9 @@ scoreboard players set _ TUSB 0
 function tusb_remake:pvp/to_stage/warp_pos_count
 
 #各プレイヤーごとにリストのどれかに飛ばす
-summon armor_stand -1919.5 6.5 -191.5 {UUID:[I;0,1,0,500],Marker:1b,Invisible:1b,Invulnerable:1b,Tags:["SystemEntity"]}
-execute as @a run function tusb_remake:pvp/to_stage/tp
-kill 0-0-1-0-500
+execute at @a[gamemode=!spectator,limit=1] run summon armor_stand ~ ~ ~ {UUID:[I;0,1,0,500],Marker:1b,Invisible:1b,Invulnerable:1b,Tags:["SystemEntity"]}
+execute as @a at @s run function tusb_remake:pvp/to_stage/tp
+kill 0-0-1-0-1f4
 
 #盲目とか付けとけ
 effect give @a blindness 15 126

@@ -4,12 +4,12 @@ execute if data storage tusb_pvp: settings{time_limit:true} run function tusb_re
 
 tag @s remove Ready
 
-function tusb_remake:pvp/to_stage/
-
 scoreboard players set _ CountDown 21
 
 tellraw @s {"text": "20秒後に開始します・・・"}
 effect clear @s
 effect give @s resistance 20 4
+
+function tusb_remake:pvp/to_stage/
 
 function tusb_remake:pvp/schedule/count_down
