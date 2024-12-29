@@ -18,6 +18,10 @@ execute as @a at @s run function tusb_remake:pvp/to_stage/tp
 kill 0-0-1-0-1f4
 
 #盲目とか付けとけ
-effect give @a blindness 15 126
+effect give @a blindness 2 126
 #鈍足は解除されるのでアトリビュートで
 execute as @a run attribute @s generic.movement_speed modifier add 0-0-7-0-1 "NoMove" -1 multiply
+#インタラクションで何もできなくする
+execute at @a[gamemode=!spectator] run summon interaction ~ ~ ~ {width:1f,height:2f,Tags:["StartingInteraction"]}
+#エンパを消す
+execute as @e[type=ender_pearl] if data entity @s Owner run kill @s
