@@ -12,4 +12,4 @@ data modify entity @e[distance=0,type=wolf,tag=GimmeBone,limit=1] Owner set from
 data merge entity @e[distance=0,type=wolf,tag=GimmeBone,limit=1] {CollarColor:15b,Health:50f,Tags:[],ActiveEffects:[{Id:6,Duration:2,Amplifier:10}]}
 execute if entity @s[team=RedTeam] run team join RedTeam @e[distance=0,type=wolf,tag=GimmeBone,limit=1]
 execute if entity @s[team=BlueTeam] run team join BlueTeam @e[distance=0,type=wolf,tag=GimmeBone,limit=1]
-execute if entity @s[team=NomalTeam] run team join NomalTeam @e[distance=0,type=wolf,tag=GimmeBone,limit=1]
+execute if entity @s[team=NormalTeam] run team join NormalTeam @e[distance=0,type=wolf,tag=GimmeBone,limit=1]

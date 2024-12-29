@@ -24,5 +24,5 @@ execute if entity @s[team=BlueTeam] if score _ ActivatedSkill matches 6020 as @e
 execute if entity @s[team=BlueTeam] if predicate tusb_remake:is_sneaking if score _ ActivatedSkill matches 6020 at @s as @a[distance=1..15,sort=furthest,limit=2,team=BlueTeam] run function tusb_remake:skill/summoner/hey_cmon/tp/player
 
 #チームなし
-execute if entity @s[team=NomalTeam] if score _ ActivatedSkill matches 6020 as @e[distance=..15,type=!player,tag=This,sort=furthest,limit=20] run function tusb_remake:skill/summoner/hey_cmon/tp/pet
+execute if entity @s[team=NormalTeam] if score _ ActivatedSkill matches 6020 as @e[distance=..15,type=!player,tag=This,sort=furthest,limit=20] run function tusb_remake:skill/summoner/hey_cmon/tp/pet
 tag @e[tag=This] remove This
