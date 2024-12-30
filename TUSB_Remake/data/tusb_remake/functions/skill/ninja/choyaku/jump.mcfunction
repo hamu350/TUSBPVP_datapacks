@@ -8,4 +8,8 @@ particle explosion ~ ~ ~ 2.0 0 2.0 0 30 force
 
 execute if score @s Choyaku matches 1..5 run data modify storage score_damage: Argument set value {Damage:6.00,DamageType:"Projectile"}
 
+execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
+
 execute if score @s Choyaku matches 1..5 as @e[distance=..3,tag=!This,predicate=tusb_remake:player] run function score_damage:api/attack
+
+tag @e[tag=This] remove This

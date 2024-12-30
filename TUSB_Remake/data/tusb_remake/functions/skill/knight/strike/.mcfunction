@@ -6,5 +6,8 @@
 playsound entity.blaze.death master @a[distance=..16] ~ ~ ~ 1 2 0
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
-function tusb_remake:skill/knight/strike/apply
-#execute if predicate tusb_remake:is_sneaking as @a[distance=..15] at @s run function tusb_remake:skill/knight/strike/apply
+
+execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
+execute unless predicate tusb_remake:is_sneaking run function tusb_remake:skill/knight/strike/apply
+execute if predicate tusb_remake:is_sneaking as @e[distance=..15,predicate=tusb_remake:player,tag=This] at @s run function tusb_remake:skill/knight/strike/apply
+tag @e[tag=This] remove This
