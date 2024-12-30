@@ -10,6 +10,7 @@ tellraw @s {"text": "20秒後に開始します・・・"}
 effect clear @s
 effect give @s resistance 20 4
 
-function tusb_remake:pvp/to_stage/
+function tusb_remake:pvp/to_stage/forceload
+schedule function tusb_remake:pvp/to_stage/ 3t
 
 function tusb_remake:pvp/schedule/count_down
