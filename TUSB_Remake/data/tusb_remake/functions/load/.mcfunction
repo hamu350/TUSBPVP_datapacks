@@ -319,7 +319,7 @@ gamerule naturalRegeneration false
 gamerule doEntityDrops true
 gamerule doFireTick true
 gamerule doMobLoot true
-gamerule doMobSpawning true
+gamerule doMobSpawning false
 gamerule doTileDrops true
 gamerule doInsomnia true
 gamerule doWardenSpawning true
