@@ -11,6 +11,6 @@ scoreboard players set @s Hunger -1
 ### 初回ログイン時の設定
 function tusb_remake:login/first_reset
 
-team join FriendlyTeam @s
+team join NormalTeam @s
 
 tag @s add Resolved

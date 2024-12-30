@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 初回ログイン時
-# execute as @a[team=] at @s run function tusb_remake:login/first
+ execute as @a[team=] at @s run function tusb_remake:login/first
 ### ログイン時
 execute as @a[scores={LeaveGame=1..}] at @s run function tusb_remake:login/
 

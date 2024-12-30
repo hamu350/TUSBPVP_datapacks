@@ -4,14 +4,14 @@
 ### This software is released under the MIT License, see LICENSE.
 
 scoreboard players set @s Job 0
-scoreboard players set @s HP 20
+scoreboard players set @s HP 100
 scoreboard players set @s Food 20
-scoreboard players set @s MPMax 100
+scoreboard players set @s MPMax 150
 scoreboard players set @s ModeState 0
 
 function #oh_my_dat:please
 ### 職業のデータのリセット
-data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.JobData set value {Knight:{Level:0,ExpToLevel:0},Ninja:{Level:0,ExpToLevel:0},Archer:{Level:0,ExpToLevel:0},WhiteMage:{Level:0,ExpToLevel:0},BlackMage:{Level:0,ExpToLevel:0},Summoner:{Level:0,ExpToLevel:0}}
+data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.JobData set value {Knight:{Level:50,ExpToLevel:0},Ninja:{Level:50,ExpToLevel:0},Archer:{Level:50,ExpToLevel:0},WhiteMage:{Level:50,ExpToLevel:0},BlackMage:{Level:50,ExpToLevel:0},Summoner:{Level:50,ExpToLevel:0}}
 ### チュートリアル既読フラグリセット
 data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.tutorial set value [I;0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
