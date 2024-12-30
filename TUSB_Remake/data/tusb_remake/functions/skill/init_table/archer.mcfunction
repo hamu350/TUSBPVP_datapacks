@@ -18,9 +18,9 @@ data modify storage tusb_remake: _.0 set value {name:["ルカナントラップ"
 data modify storage tusb_remake: _.1 set value {name:[""],level:[5],cost:10000,description:[["照明弾を撃ち上げ、辺りが明るく見えるようにする。"]],range:[30],duration:[60]}
 data modify storage tusb_remake: _.2 set value {name:["ボミオストラップ","ボミオストラップ"],level:[13,33],cost:20,description:[["移動速度低下Ⅵを付与する罠を設置する。"]],range:[5],duration:[20]}
 data modify storage tusb_remake: _.3 set value {name:[""],level:[15],cost:10000,description:[["手持ちの食材を焼く。"]]}
-data modify storage tusb_remake: _.4 set value {name:["エンチェイス","エンチェイス"],level:[17,37],cost:5,description:[["自身の次に放つ矢が敵に当たりやすくなる。"]],sneak:{description:[["周囲のプレイヤーの次に放つ矢が敵に当たりやすくなる。"]],range:[15]}}
+data modify storage tusb_remake: _.4 set value {name:["エンチェイス","エンチェイス"],level:[17,37],cost:5,description:[["自身の次に放つ矢が8m以内の敵に当たるようになる。"]],sneak:{description:[["範囲内の味方の次に放つ矢が8m以内の敵に当たるようになる。"]],range:[15]}}
 data modify storage tusb_remake: _.5 set value {COMMENT:"/* 効果時間がレベルに応じて変化するため配列型に設定&正常に動作しない可能性あり */",name:["レーダーヴィジョン","レーダーヴィジョン"],level:[18,38],cost:80,description:[["特殊な視点で周囲を偵察する。"]],duration:[2,5]}
-data modify storage tusb_remake: _.6 set value {name:["エナジーセーブ"],level:[35],cost:10,description:[["自身の次に使うスキルの消費MPを半減する。"]],sneak:{description:[["周囲のプレイヤーの次に使うスキルの消費MPを半減する。"]],range:[15]}}
+data modify storage tusb_remake: _.6 set value {name:["エナジーセーブ"],level:[35],cost:10,description:[["自身の次に使うスキルの消費MPを半減する。"]],sneak:{description:[["範囲内のプレイヤーの次に使うスキルの消費MPを半減する。"]],range:[15]}}
 data modify storage tusb_remake: _.7 set value {name:[""],level:[46],cost:10000,description:[["弱く無防備な敵を消し去る罠を設置する。"]],range:[5],duration:[20]}
 
 # data modify storage tusb_remake: _.20 set value {name:["ステークスファイア","ステークスファイア","ステークスファイア"],level:[1,20,40],cost:1,description:[["てすと"]]}
