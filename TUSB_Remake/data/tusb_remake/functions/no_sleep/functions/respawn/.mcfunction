@@ -20,5 +20,9 @@ execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings
 execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if score @s Remaining matches 0 run tag @s add SightSeeing
 execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if score @s Remaining matches 1.. run title @s actionbar {"translate": "残り残機 %1$s","with": [{"score": {"name": "@s","objective": "Remaining"}}]}
 
+execute if data storage tusb_pvp: {Battle:1b} if entity @s[gamemode=adventure] run function tusb_remake:pvp/reset_item
+
+
+
 advancement revoke @s only no_sleep:death
 advancement revoke @s only no_sleep:respawn
