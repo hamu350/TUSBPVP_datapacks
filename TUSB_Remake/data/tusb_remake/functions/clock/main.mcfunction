@@ -97,7 +97,7 @@ execute as @a at @s unless data storage tusb_pvp: {Battle:1b} if data storage tu
 ### バトルエンド
 execute as @a at @s if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{time_limit:1b} if score _ TimeLimit matches 0 run function tusb_remake:pvp/end
 execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} store result storage tusb_pvp: test byte 1 if entity @a[scores={Remaining=1..}]
-execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if data storage tusb_pvp: {test:1} run function tusb_remake:pvp/end
+execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{death_match:1b} if data storage tusb_pvp: {test:1b} run function tusb_remake:pvp/end
 
 ### 準備できてないやん
 execute as @a at @s unless data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{time_limit:1b} unless score _ TimeLimit matches 1.. unless entity @a[tag=!Ready,gamemode=!spectator] run title @a actionbar {"text": "時間が設定されていません！"}
