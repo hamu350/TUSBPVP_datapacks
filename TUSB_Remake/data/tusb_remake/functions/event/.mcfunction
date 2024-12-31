@@ -9,4 +9,4 @@ execute if score #EventTimer Global matches ..0 as @r run function tusb_remake:e
 scoreboard players remove #EventTimer Global 1
 
 ### イベントタイマーが０だったらイベント発生
-execute if score #EventTimer Global matches 0 run function tusb_remake:event/cause
+#execute if score #EventTimer Global matches 0 run function tusb_remake:event/cause
