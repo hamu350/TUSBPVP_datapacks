@@ -13,5 +13,7 @@ tag @a[tag=Winner] remove Winner
 data modify storage tusb_pvp: settings.time_limit set value 0b
 data modify storage tusb_pvp: settings.death_match set value 0b
 tp @a -2724.0 88 -382.0
+spawnpoint @a -2724 88 -382
+gamemode adventure @a
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1.0 1.5 0.0
 clear @a
