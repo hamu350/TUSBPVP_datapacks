@@ -25,3 +25,5 @@ execute as @a run attribute @s generic.movement_speed modifier add 0-0-7-0-1 "No
 execute at @a[gamemode=!spectator] run summon interaction ~ ~ ~ {width:1f,height:2f,Tags:["StartingInteraction"]}
 #エンパを消す
 execute as @e[type=ender_pearl] if data entity @s Owner run kill @s
+#ジャンプ不可
+effect give @a jump_boost 20 130 true
