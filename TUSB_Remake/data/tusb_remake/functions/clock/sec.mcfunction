@@ -86,3 +86,8 @@ execute in minecraft:overworld run schedule function tusb_remake:clock/sec 1s
 ## 時間制限ボスバー
 execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{time_limit:1b} store result bossbar tusb_pvp:time_limit value run scoreboard players get _ TimeLimit
 execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings{time_limit:1b} unless score _ TimeLimit matches 0 run scoreboard players remove _ TimeLimit 1
+
+
+tag @a add Adv
+
+kill @e[type=item]

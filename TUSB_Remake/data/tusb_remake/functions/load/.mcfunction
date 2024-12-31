@@ -273,6 +273,10 @@ scoreboard objectives add Remaining dummy {"text": "残り残機"}
 scoreboard objectives add KillCount playerKillCount {"text": "キルカウント"}
 scoreboard objectives add PreKillCount dummy {"text":"前tickのキルカウント"}
 
+bossbar add tusb_pvp:time_limit "残り時間"
+bossbar set tusb_pvp:time_limit color white 
+bossbar set tusb_pvp:time_limit visible false
+
 # 開始時間
 scoreboard objectives add CountDown dummy {"text": "開始まで"}
 
