@@ -14,7 +14,7 @@ execute on passengers on origin at @s as @e[predicate=tusb_remake:player] run fu
 ### リメイク：エンチェイスの範囲を拡大
 data modify storage tusb_remake: chaser_invoked set value false
 execute if entity @s[tag=Chaser1] as @e[distance=..5,tag=!This,predicate=tusb_remake:player,tag=!Owner,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
-execute if entity @s[tag=Chaser2] as @e[distance=..8,tag=!This,predicate=tusb_remake:player,tag=!Owner,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
+execute if entity @s[tag=Chaser2] as @e[distance=..10,tag=!This,predicate=tusb_remake:player,tag=!Owner,sort=nearest,limit=1] at @s run function tusb_remake:skill/projectile/check/chaser/apply
 
 tag @e[tag=Owner] remove Owner
 
