@@ -12,6 +12,13 @@ execute if score @s ShowMenu matches 10 run function tusb_remake:display/gameset
 
 #> 転職トリガー
 execute if score @s ShowMenu matches 20 run function tusb_remake:display/job_change
+execute if score @s ShowMenu matches 21 run function debug:job_change/knight
+execute if score @s ShowMenu matches 22 run function debug:job_change/ninja
+execute if score @s ShowMenu matches 23 run function debug:job_change/archer
+execute if score @s ShowMenu matches 24 run function debug:job_change/white_mage
+execute if score @s ShowMenu matches 25 run function debug:job_change/black_mage
+execute if score @s ShowMenu matches 26 run function debug:job_change/summoner
+
 
 #> 時間制限モード
 execute if score @s ShowMenu matches 310 run function tusb_remake:pvp/time_limit/setting
