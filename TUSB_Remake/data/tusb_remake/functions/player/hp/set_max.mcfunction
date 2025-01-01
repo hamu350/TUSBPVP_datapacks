@@ -6,3 +6,4 @@
 attribute @s minecraft:generic.max_health modifier remove 0-0-a1-0-1
 
 attribute @s minecraft:generic.max_health modifier add 0-0-a1-0-1 "HPMaxModifer" 80.0 add
+effect give @s instant_health 1 10

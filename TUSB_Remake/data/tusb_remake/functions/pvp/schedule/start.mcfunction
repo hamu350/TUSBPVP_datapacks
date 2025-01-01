@@ -13,3 +13,4 @@ scoreboard players reset @a ShowMenu
 scoreboard players set @a ShowMenu 0
 kill @e[type=wolf]
 kill @e[type=iron_golem]
+effect give @a instant_health 1 10
