@@ -13,4 +13,4 @@ effect give @e[distance=0,type=wolf,tag=GimmeBone,limit=1] instant_damage 20 0
 data merge entity @e[distance=0,type=wolf,tag=GimmeBone,limit=1] {CollarColor:15b,Tags:[],Attributes:[{Name:"generic.max_health",Base:5d}]}
 execute if entity @s[team=RedTeam] run team join RedTeam @e[distance=0,type=wolf,tag=GimmeBone,limit=1]
 execute if entity @s[team=BlueTeam] run team join BlueTeam @e[distance=0,type=wolf,tag=GimmeBone,limit=1]
-execute if entity @s[team=NormalTeam] run team join NormalTeam @e[distance=0,type=wolf,tag=GimmeBone,limit=1]
+#execute if entity @s[team=NormalTeam] run team join NormalTeam @e[distance=0,type=wolf,tag=GimmeBone,limit=1]
