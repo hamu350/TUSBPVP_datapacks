@@ -17,3 +17,5 @@ spawnpoint @a -2724 88 -382
 gamemode adventure @a
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1.0 1.5 0.0
 clear @a
+scoreboard players reset @a ShowMenu
+scoreboard players enable @a ShowMenu

@@ -8,7 +8,7 @@ execute as @a[tag=LoginMessage,scores={Job=1..}] run function tusb_remake:displa
 ### もし観光モードなら、それを表示
 execute if data storage tusb_remake: settings{is_sightseeing:true} run tellraw @a[tag=LoginMessage] {"text":"観光モード中です。","color":"yellow"}
 
-execute as @a[tag=LoginMessage,scores={Job=1..}] run function tusb_remake:login/show_menu
+execute as @a[tag=LoginMessage,scores={Job=1..}] unless data storage tusb_pvp: {Battle:1b} run function tusb_remake:login/show_menu
 
 ### 祈りが表示できれば表示
 tag @a[tag=LoginMessage] add Pray

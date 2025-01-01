@@ -20,6 +20,9 @@ function tusb_remake:set_difficulty/
 #戦闘中ならスぺクに
 execute if data storage tusb_pvp: {Battle:1b} run gamemode spectator @s
 execute if data storage tusb_pvp: {Battle:1b} run scoreboard players set @s Remaining 0
+execute if data storage tusb_pvp: {Battle:1b} run scoreboard players reset @s ShowMenu
+execute if data storage tusb_pvp: {Battle:1b} run scoreboard players set @s ShowMenu 0
+
 
 ## TODO
 # setblock -2722 90 -393 minecraft:oak_wall_sign[facing=south,waterlogged=false]{Color:"black",GlowingText:0b,Text1:'{"bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/function tusb_remake:player/mp/reset_display"},"text":"=注意="}',Text2:'{"bold":true,"color":"gold","text":"MP表示を整理します"}',Text3:'{"bold":true,"color":"gold","text":"非ﾛｸﾞｲﾝﾌﾟﾚｲﾔｰのMPは"}',Text4:'{"bold":true,"color":"gold","text":"はリセットされます"}'}

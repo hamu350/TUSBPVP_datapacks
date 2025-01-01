@@ -22,6 +22,7 @@ execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings
 
 execute if data storage tusb_pvp: {Battle:1b} if entity @s[gamemode=adventure] run function tusb_remake:pvp/reset_item
 
+function tusb_remake:player/hp/set_max
 
 advancement revoke @s only no_sleep:death
 advancement revoke @s only no_sleep:respawn
