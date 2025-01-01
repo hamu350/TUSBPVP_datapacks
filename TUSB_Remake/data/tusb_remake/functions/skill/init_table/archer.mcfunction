@@ -33,7 +33,7 @@ data modify storage tusb_remake: _.7 set value {name:[""],level:[46],cost:10000,
 data modify storage tusb_remake: _.20 set value {name:["ステークスファイア","ステークスファイア","ステークスファイア"],level:[1,20,40],cost:7,description:[["矢の威力が90%で3倍になる。外れると0倍になる。"]],condition:"利き手で弓を構え矢を放つ"}
 data modify storage tusb_remake: _.21 set value {name:["チェインアロー","チェインアロー","チェインアロー"],level:[8,28,48],cost:15,description:[["ダメージが周囲に広がる特殊な矢を放つ。"]],condition:"利き手で弓を構え矢を放つ",range:[5,15,25]}
 data modify storage tusb_remake: _.22 set value {name:["",""],level:[10,30],cost:10000,description:[["自身の体力を回復する。"],["自身の体力・状態異常を回復する。"]],condition:"食事を取る"}
-data modify storage tusb_remake: _.23 set value {name:["ブラストショット","ブラストショット"],level:[25,45],cost:5,description:[["爆発する特殊な矢を放つ。爆発すると範囲内の敵に25ダメージ与え、ノックバックさせる。"]],condition:"利き手で弓を構え矢を放つ",range:[6]}
+data modify storage tusb_remake: _.23 set value {name:["ブラストショット","ブラストショット"],level:[25,45],cost:30,description:[["爆発する特殊な矢を放つ。爆発すると範囲内の敵に25ダメージ与え、ノックバックさせる。"]],condition:"利き手で弓を構え矢を放つ",range:[6]}
 data modify storage tusb_remake: _.24 set value {name:["バードストライク"],level:[26],cost:5,description:[["範囲内の敵に浮遊-125とジャンプ不可を10秒間付与する矢を放つ。"]],condition:"利き手で弓を構え矢を放つ",range:[6]}
 data modify storage tusb_remake: _.25 set value {name:["",""],level:[39,49],cost:10000,description:[["放った矢を火球に変える。"]],condition:"利き手で弓を構え矢を放つ"}
 data modify storage tusb_remake: _.26 set value {name:["フェイタルショット"],level:[50],cost:100,description:[["矢が着弾した時、範囲内の敵に以下の効果を与える。","・被ダメージ2倍","・移動速度低下20","・弱体化20","・浮遊-125","・ジャンプ不可","・攻撃力上昇解除","・火炎耐性解除","・水中呼吸解除"]],condition:"利き手で弓を構え矢を放つ",range:[10],duration:[10]}
