@@ -19,3 +19,5 @@ execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @
 clear @a
 scoreboard players reset @a ShowMenu
 scoreboard players enable @a ShowMenu
+kill @e[type=wolf]
+kill @e[type=iron_golem]

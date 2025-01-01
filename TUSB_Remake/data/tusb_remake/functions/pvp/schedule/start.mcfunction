@@ -11,3 +11,5 @@ execute as @a run attribute @s generic.movement_speed modifier remove 0-0-7-0-1
 kill @e[tag=StartingInteraction]
 scoreboard players reset @a ShowMenu
 scoreboard players set @a ShowMenu 0
+kill @e[type=wolf]
+kill @e[type=iron_golem]

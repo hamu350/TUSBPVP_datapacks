@@ -22,7 +22,7 @@ effect give @a blindness 2 126
 #鈍足は解除されるのでアトリビュートで
 execute as @a run attribute @s generic.movement_speed modifier add 0-0-7-0-1 "NoMove" -1 multiply
 #インタラクションで何もできなくする
-execute at @a[gamemode=!spectator] run summon interaction ~ ~ ~ {width:1f,height:2f,Tags:["StartingInteraction"]}
+execute at @a[gamemode=!spectator] run summon interaction ~ ~ ~ {width:6f,height:2f,Tags:["StartingInteraction"]}
 #エンパを消す
 execute as @e[type=ender_pearl] if data entity @s Owner run kill @s
 #ジャンプ不可
