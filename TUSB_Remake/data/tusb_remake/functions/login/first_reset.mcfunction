@@ -6,7 +6,7 @@
 scoreboard players set @s Job 0
 scoreboard players set @s HP 100
 scoreboard players set @s Food 20
-scoreboard players set @s MPMax 150
+scoreboard players set @s MPMax 100
 scoreboard players set @s ModeState 0
 
 function #oh_my_dat:please
