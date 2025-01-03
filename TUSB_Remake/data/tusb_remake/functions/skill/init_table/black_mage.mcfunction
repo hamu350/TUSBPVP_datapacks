@@ -25,7 +25,7 @@ data modify storage tusb_remake: _.9 set value {name:[""],level:[40],cost:10000,
 #黒魔導士モード
 data modify storage tusb_remake: _.20 set value {name:["アイスストーム","アイスストーム","アイスストーム"],level:[1,20,45],cost:5,description:[["凍てつく球状の冷気を放ち、範囲内の敵に17ダメージと移動速度低下Ⅱを10秒間与える。"]],condition:"雪玉を投げる",range:[5]}
 data modify storage tusb_remake: _.21 set value {name:["クロスファイアー","クロスファイアー","クロスファイアー"],level:[5,25,46],cost:20,description:[["燃え盛る十字状の火炎を放ち、範囲内の敵に35ダメージ与える。"]],condition:"雪玉を投げる",range:[7]}
-data modify storage tusb_remake: _.22 set value {name:["サンダーボルト","サンダーボルト","サンダーボルト"],level:[10,30,48],cost:20,description:[["付近の敵単体に雷を落とし、30ダメージ与える。","水中または雨に当たりながら放つと範囲内全ての敵に30ダメージ与える。"]],condition:"ニンジン付きの棒を持って右クリック",range:[5]}
+data modify storage tusb_remake: _.22 set value {name:["サンダーボルト","サンダーボルト","サンダーボルト"],level:[10,30,48],cost:30,description:[["付近の敵単体に雷を落とし、30ダメージ与える。","水中または雨に当たりながら放つと範囲内全ての敵に30ダメージ与える。"]],condition:"ニンジン付きの棒を持って右クリック",range:[5]}
 data modify storage tusb_remake: _.23 set value {name:["ジオクラッシュ","ジオクラッシュ","ジオクラッシュ"],level:[15,35,49],cost:20,description:[["範囲内の接地している敵に25ダメージ与える。"]],condition:"ニンジン付きの棒を持って右クリック",range:[10]}
 data modify storage tusb_remake: _.24 set value {name:["ドレイン","ドレイン"],level:[17,37],cost:50,description:[["付近の敵単体に20ダメージ与え、自身の体力を16回復し、自身に衝撃吸収Ⅲを20秒間付与する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[10]}
 data modify storage tusb_remake: _.25 set value {name:[""],level:[50],cost:10000,description:[["何が起こるか分からない。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
