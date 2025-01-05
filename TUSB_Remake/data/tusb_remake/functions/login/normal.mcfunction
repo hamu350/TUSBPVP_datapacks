@@ -12,3 +12,7 @@ tag @s add ShowVote
 tag @s add LoginMessage
 # function tusb_remake:login/schedule
 schedule function tusb_remake:login/schedule 5s append
+
+execute if data storage tusb_pvp: {Battle:1b} run gamemode spectator @s
+execute if data storage tusb_pvp: {Battle:1b} run tag @s add SightSeeing
+execute if data storage tusb_pvp: {Battle:1b} run tellraw @s {"text": "PvP中に退室したため観光モードになりました。"}

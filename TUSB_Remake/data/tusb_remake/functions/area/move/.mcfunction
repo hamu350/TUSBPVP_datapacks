@@ -14,16 +14,16 @@ scoreboard players operation @s USBDimension = @s AreaChangeFlag
 
 ### エリアタイトル表示
 title @s[scores={AreaChangeFlag=-100..}] times 30 40 40
-execute if entity @s[scores={AreaChangeFlag=0}] run function tusb_remake:area/move/skyland
-execute if entity @s[scores={AreaChangeFlag=1}] run function tusb_remake:area/move/underworld
+# execute if entity @s[scores={AreaChangeFlag=0}] run function tusb_remake:area/move/skyland
+# execute if entity @s[scores={AreaChangeFlag=1}] run function tusb_remake:area/move/underworld
 execute if entity @s[scores={AreaChangeFlag=10}] run function tusb_remake:area/move/cloudia
-execute if entity @s[scores={AreaChangeFlag=11}] run function tusb_remake:area/move/table_mountain
-execute if entity @s[scores={AreaChangeFlag=12}] run function tusb_remake:area/move/gullivers_land
-execute if entity @s[scores={AreaChangeFlag=13}] run function tusb_remake:area/move/tocult_colde
-execute if entity @s[scores={AreaChangeFlag=-100}] run function tusb_remake:area/move/nether
-execute if entity @s[scores={AreaChangeFlag=-90}] run function tusb_remake:area/move/nether_trial
-execute if entity @s[scores={AreaChangeFlag=-89}] run function tusb_remake:area/move/nether_dungeon
-execute if entity @s[scores={AreaChangeFlag=110}] run function tusb_remake:area/move/end
+# execute if entity @s[scores={AreaChangeFlag=11}] run function tusb_remake:area/move/table_mountain
+# execute if entity @s[scores={AreaChangeFlag=12}] run function tusb_remake:area/move/gullivers_land
+# execute if entity @s[scores={AreaChangeFlag=13}] run function tusb_remake:area/move/tocult_colde
+# execute if entity @s[scores={AreaChangeFlag=-100}] run function tusb_remake:area/move/nether
+# execute if entity @s[scores={AreaChangeFlag=-90}] run function tusb_remake:area/move/nether_trial
+# execute if entity @s[scores={AreaChangeFlag=-89}] run function tusb_remake:area/move/nether_dungeon
+# execute if entity @s[scores={AreaChangeFlag=110}] run function tusb_remake:area/move/end
 
 ### エリア移動時に初期地点があった場合、そこに移動させる
 ### TODO: あとで座標ベタ打ちに変えた方がいいよ

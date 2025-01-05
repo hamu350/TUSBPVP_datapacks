@@ -4,9 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 威力を設定
-execute if score @s ActivatedSkill matches 5220 run data modify storage score_damage: Argument set value {Damage:150.00,DamageType:"Projectile"}
-execute if score @s ActivatedSkill matches 5221 run data modify storage score_damage: Argument set value {Damage:250.00,DamageType:"Projectile"}
-execute if score @s ActivatedSkill matches 5222..5229 run data modify storage score_damage: Argument set value {Damage:30.00,DamageType:"Projectile"}
+execute if score @s ActivatedSkill matches 5220..5229 run data modify storage score_damage: Argument set value {Damage:25.00,DamageType:"Projectile"}
 
 ### 水の有無によって範囲が変わる
 execute on origin run function tusb_remake:skill/use_damage_skill

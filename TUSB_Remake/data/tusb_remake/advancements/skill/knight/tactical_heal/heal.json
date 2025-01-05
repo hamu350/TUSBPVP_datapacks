@@ -16,7 +16,7 @@
 						"entity": "this",
 						"scores": {
 							"DamageTaken": {
-								"min": 120
+								"min": 200
 							}
 						}
 					}

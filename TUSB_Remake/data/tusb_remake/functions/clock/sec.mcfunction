@@ -90,4 +90,4 @@ execute if data storage tusb_pvp: {Battle:1b} if data storage tusb_pvp: settings
 
 tag @a add Adv
 
-kill @e[type=item]
+# kill @e[type=item]

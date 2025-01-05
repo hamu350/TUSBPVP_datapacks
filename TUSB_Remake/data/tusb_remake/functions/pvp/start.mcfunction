@@ -13,6 +13,8 @@ effect give @s resistance 20 4
 function tusb_remake:pvp/to_stage/forceload
 schedule function tusb_remake:pvp/to_stage/ 3t replace
 
+kill @e[type=item]
+
 #アイテムセーブ&ロード
 function #oh_my_dat:please
 data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PVPItems set value [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]

@@ -7,7 +7,7 @@
 ### まずは負け確定にしておく
 data modify storage tusb_remake: stakes_result set value false
 ### レベル１なら50%の確率で勝ちに
-execute if score _ ActivatedSkill matches 3200..3209 if predicate tusb_remake:random/stakes_fire/1 run data modify storage tusb_remake: stakes_result set value true
+execute if score _ ActivatedSkill matches 3200..3209 if predicate tusb_remake:random/stakes_fire/2 run data modify storage tusb_remake: stakes_result set value true
 
 ### 負け
 execute if data storage tusb_remake: {stakes_result:false} anchored eyes positioned ^ ^ ^ anchored feet as @e[distance=..2,type=#tusb_remake:arrow,nbt={life:0s},sort=nearest,limit=1] run function tusb_remake:skill/archer/stakes_fire/apply/lose

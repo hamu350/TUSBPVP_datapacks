@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### ダメージを与える
-data modify storage score_damage: Argument set value {Damage:50.00,DamageType:"Projectile"}
+data modify storage score_damage: Argument set value {Damage:70.00,DamageType:"Projectile"}
 function score_damage:api/attack
 
 particle minecraft:crit ~ ~1 ~ 0.1 0.2 0.1 1 10 force

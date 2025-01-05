@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond_axe"
+      },
+      "title": {
+        "text": "泉の女神の斧",
+        "color": "aqua",
+        "bold": false
+      },
+      "description": {
+        "text": "真の女神斧を手にした者に贈られる進捗"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "tusb_remake:root",
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:diamond_axe"
+              ],
+              "nbt": "{RepairCost: 1000000000, Damage: 0, HideFlags: 2, AttributeModifiers: [{Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Operation: 0, UUID: [I; 0, 1, 0, 1], Amount: 0, Name: \"generic.attack_damage\"}], display: {Lore: ['{\"text\":\"§b§lとある泉の女神が\"}', '{\"text\":\"§b§l所持していると言われている\"}', '{\"text\":\"§b§l不思議な斧\"}', '{\"text\":\"§b§l左利き用に作られている。\"}'], Name: '{\"text\":\"§b§l泉の女神の斧\"}'}}"
+            }
+          ]
+        }
+      }
+    }
+  }

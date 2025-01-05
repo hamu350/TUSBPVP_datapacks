@@ -12,5 +12,4 @@ playsound minecraft:block.glass.break master @s[tag=!Mokuso] ~ ~ ~ 1 1.414
 tellraw @s[tag=!Mokuso] {"text":"黙想の効果が切れた。","color":"gold"}
 effect clear @s[tag=!Mokuso] minecraft:regeneration
 ### 黙想継続
-effect give @s[tag=Mokuso] minecraft:regeneration 15 1
-effect give @s[tag=Mokuso,scores={Level=43..}] minecraft:regeneration 15 2
+effect give @s[tag=Mokuso] minecraft:regeneration 15 3

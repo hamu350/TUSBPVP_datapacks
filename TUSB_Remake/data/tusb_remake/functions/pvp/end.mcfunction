@@ -12,6 +12,9 @@ scoreboard players add @a[tag=Winner] WinCount 1
 tag @a[tag=Winner] remove Winner
 data modify storage tusb_pvp: settings.time_limit set value 0b
 data modify storage tusb_pvp: settings.death_match set value 0b
+scoreboard players reset _ TimeLimit
+scoreboard players reset * Remaining
+kill @e[type=item]
 tp @a -2724.0 88 -382.0
 spawnpoint @a -2724 88 -382
 gamemode adventure @a
@@ -21,3 +24,4 @@ scoreboard players reset @a ShowMenu
 scoreboard players enable @a ShowMenu
 kill @e[type=wolf]
 kill @e[type=iron_golem]
+effect give @a instant_health 1 20

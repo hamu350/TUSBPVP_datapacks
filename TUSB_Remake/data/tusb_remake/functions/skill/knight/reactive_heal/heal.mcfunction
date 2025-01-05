@@ -6,4 +6,4 @@
 playsound entity.player.levelup master @a[distance=..16] ~ ~ ~ 1 1.88 0
 particle heart ~ ~1 ~ 0.5 0.5 0.5 0 30 force
 
-execute if score @s ActivatedSkill matches 1230..1239 run scoreboard players add @s HealCount 4
+execute if score @s ActivatedSkill matches 1230..1239 run scoreboard players add @s HealCount 8

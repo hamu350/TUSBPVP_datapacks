@@ -9,5 +9,5 @@ particle item minecraft:popped_chorus_fruit ~ ~1.5 ~ 0 0 0 0.2 30 force @a[dista
 ### スキルのレベルに応じた確率で、ヒットした敵の武器を消す
 
 ### スキルのレベルに応じたダメージを与える
-execute if score _ ActivatedSkill matches 1240..1249 run data modify storage score_damage: Argument set value {Damage:40.00,DamageType:"Projectile"}
+execute if score _ ActivatedSkill matches 1240..1249 run data modify storage score_damage: Argument set value {Damage:60.00,DamageType:"Projectile"}
 function score_damage:api/attack

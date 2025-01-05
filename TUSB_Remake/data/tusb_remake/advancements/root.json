@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:white_wool"
+        },
+        "title": "TUSB_PvP",
+        "description": "進捗の達成を目指してPvPを楽しもう！",
+        "background": "minecraft:textures/block/white_wool.png",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

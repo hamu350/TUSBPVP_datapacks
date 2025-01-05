@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:end_crystal"
+      },
+      "title": "§e§k|||§r§eエストレーヤ§k|||§r",
+      "description": "§51 / 8192 を超えし者に贈られる進捗",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "tusb_remake:megamiono",
+    "criteria": {
+      "trigger": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:end_crystal"
+              ],
+              "nbt": "{HideFlags: 60, display: {Name: '{\"text\":\"§e§lエストレーヤ\"}'}}"
+            }
+          ]
+        }
+      }
+    }
+  }
