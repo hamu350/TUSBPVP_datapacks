@@ -20,7 +20,7 @@ data modify storage tusb_remake: _.2 set value {name:["ヘイカモンα","ヘ�
 data modify storage tusb_remake: _.3 set value {name:["サモンE:スーパードラゴン"],level:[17],cost:35,description:[["スーパードラゴンを召喚する。"]]}
 data modify storage tusb_remake: _.4 set value {name:["サモンP：ウルフ"],level:[25],cost:40,description:[["オオカミ(ペット)を召喚する。","HP：8","攻撃力：22","防御力：ダイヤフルと同等","特性：火炎耐性","支援：攻撃力上昇"]]}
 data modify storage tusb_remake: _.5 set value {name:[""],level:[30],cost:10000,description:[["ぬこかわいいよぬこ。"]],duration:[10]}
-data modify storage tusb_remake: _.6 set value {name:["サモンP：ゴーレム"],level:[45],cost:50,description:[["アイアンゴーレム(ペット)を召喚する。","HP：20","攻撃力：7～21","防御力：ダイヤフルと同等","特性：射撃耐性","支援：防御力上昇"]]}
+data modify storage tusb_remake: _.6 set value {name:["サモンP：ゴーレム"],level:[45],cost:50,description:[["アイアンゴーレム(ペット)を召喚する。","HP：30","攻撃力：10","特性：射撃耐性","支援：防御力上昇"]]}
 data modify storage tusb_remake: _.7 set value {name:["サモンE:バルーン"],level:[46],cost:55,description:[["熱気球を召喚する。"]]}
 data modify storage tusb_remake: _.8 set value {name:[""],level:[49],cost:10000,description:[["グライダーを召喚する。"]]}
 

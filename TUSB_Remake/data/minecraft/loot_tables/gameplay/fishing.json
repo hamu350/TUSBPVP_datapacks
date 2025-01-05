@@ -5,20 +5,20 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "minecraft:gameplay/fishing/treasure",
-                    "weight": 10,
+                    "name": "usb:gameplay/fishing/special",
+                    "weight": 0,
                     "quality": 0
                 },
                 {
                     "type": "loot_table",
-                    "name": "minecraft:gameplay/fishing/treasure",
+                    "name": "minecraft:gameplay/fishing/fish",
                     "weight": 5,
                     "quality": 10
                 },
                 {
                     "type": "loot_table",
                     "name": "minecraft:gameplay/fishing/fish",
-                    "weight": 85,
+                    "weight": 95,
                     "quality": 5
                 },
                 {

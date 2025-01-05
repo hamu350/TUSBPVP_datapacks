@@ -83,6 +83,9 @@ execute as @a at @s unless score @s ShowMenu matches 0 run function tusb_remake:
 execute as @a at @s unless score @s ChangeSkillSet matches 0 run function tusb_remake:player/display/skillset
 execute as @a at @s unless score @s SkillSetting matches 0 run function tusb_remake:player/display/skilldisplay
 
+### バトル中飯
+execute as @a[scores={FoodChanging=19}] if data storage tusb_pvp: {Battle:1b} run effect give @s saturation 1 0
+
 ### バトル外無敵
 execute as @a unless data storage tusb_pvp: {Battle:1b} run effect give @s resistance infinite 4 true
 execute as @a unless data storage tusb_pvp: {Battle:1b} run effect give @s saturation infinite 0 true

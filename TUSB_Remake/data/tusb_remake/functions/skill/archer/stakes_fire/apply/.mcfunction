@@ -6,7 +6,7 @@
 ### リメイク：成功確率を少しアップ
 ### まずは負け確定にしておく
 data modify storage tusb_remake: stakes_result set value false
-### レベル１なら50%の確率で勝ちに
+### 70%の確率で勝ちに
 execute if score _ ActivatedSkill matches 3200..3209 if predicate tusb_remake:random/stakes_fire/2 run data modify storage tusb_remake: stakes_result set value true
 
 ### 負け

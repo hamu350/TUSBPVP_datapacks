@@ -16,8 +16,8 @@ execute as @a[scores={HealCount=4..},nbt=!{ActiveEffects:[{Id:6}]}] run function
 execute as @a[scores={HPChanging=0..}] run scoreboard players operation @s HP = @s HPChanging
 scoreboard players reset @a[scores={HPChanging=0..}] HPChanging
 ### 満腹度記録
-# execute as @a[scores={FoodChanging=0..}] run scoreboard players operation @s Food = @s FoodChanging
-# scoreboard players reset @a[scores={FoodChanging=0..}] FoodChanging
+execute as @a[scores={FoodChanging=0..}] run scoreboard players operation @s Food = @s FoodChanging
+scoreboard players reset @a[scores={FoodChanging=0..}] FoodChanging
 ### 満腹度制限
 # execute as @a[scores={FoodMax=0..}] run function tusb_remake:player/food/limit
 

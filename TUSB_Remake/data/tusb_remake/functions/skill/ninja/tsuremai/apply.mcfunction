@@ -26,10 +26,3 @@ attribute @s[scores={Tsuremai=2}] minecraft:generic.attack_damage modifier add 6
 attribute @s[scores={Tsuremai=3}] minecraft:generic.attack_damage modifier add 6765f63f-00a6-47e7-81ec-5647ceecf0f1 "Tsuremai" 6.0 add
 attribute @s[scores={Tsuremai=4}] minecraft:generic.attack_damage modifier add 6765f63f-00a6-47e7-81ec-5647ceecf0f1 "Tsuremai" 8.0 add
 attribute @s[scores={Tsuremai=5}] minecraft:generic.attack_damage modifier add 6765f63f-00a6-47e7-81ec-5647ceecf0f1 "Tsuremai" 10.0 add
-
-attribute @s minecraft:generic.attack_damage modifier remove 25ef82d7-835d-4d2d-9f64-e919e86e97fa
-attribute @s[scores={Tsuremai=1}] minecraft:generic.attack_damage modifier add 25ef82d7-835d-4d2d-9f64-e919e86e97fa "Tsuremai" 0.3 multiply
-attribute @s[scores={Tsuremai=2}] minecraft:generic.attack_damage modifier add 25ef82d7-835d-4d2d-9f64-e919e86e97fa "Tsuremai" 0.6 multiply
-attribute @s[scores={Tsuremai=3}] minecraft:generic.attack_damage modifier add 25ef82d7-835d-4d2d-9f64-e919e86e97fa "Tsuremai" 0.9 multiply
-attribute @s[scores={Tsuremai=4}] minecraft:generic.attack_damage modifier add 25ef82d7-835d-4d2d-9f64-e919e86e97fa "Tsuremai" 1.2 multiply
-attribute @s[scores={Tsuremai=5}] minecraft:generic.attack_damage modifier add 25ef82d7-835d-4d2d-9f64-e919e86e97fa "Tsuremai" 1.5 multiply
