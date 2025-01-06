@@ -12,10 +12,10 @@ execute if entity @s[team=RedTeam] run team join RedTeam @e[type=iron_golem,limi
 execute if entity @s[team=BlueTeam] run team join BlueTeam @e[type=iron_golem,limit=1,sort=nearest,distance=0]
 #execute if entity @s[team=NormalTeam] run team join NormalTeam @e[type=iron_golem,limit=1,sort=nearest,distance=0]
 summon area_effect_cloud ~ ~ ~ {Duration:2147483647,Radius:0.01f,Tags:["GolemAEC"],Particle:"block air"}
-data modify entity @e[tag=PetGolem,distance=..0.01,limit=1,sort=nearest] Owner set from entity @s UUID
+#data modify entity @e[tag=PetGolem,distance=..0.01,limit=1,sort=nearest] Owner set from entity @s UUID
 data modify entity @e[tag=GolemAEC,distance=..0.01,limit=1,sort=nearest] Owner set from entity @s UUID
 ride @e[tag=GolemAEC,limit=1,sort=nearest,distance=0] mount @e[type=iron_golem,limit=1,sort=nearest,distance=0]
-tag @s add This
-data modify entity @e[tag=PetGolem,distance=..0.01,limit=1,sort=nearest] AngryAt set from entity @p[tag=!This] UUID
-tag @s remove This
+execute at @s as @e[predicate=tusb_remake:player] run function tusb_remake:skill/this
+data modify entity @e[tag=PetGolem,distance=..0.01,limit=1,sort=nearest] AngryAt set from entity @e[predicate=tusb_remake:player,limit=1,sort=nearest,tag=!This] UUID
+tag @e[tag=This] remove This
 schedule function tusb_remake:skill/summoner/summon_golem/schedule/ 1t replace
