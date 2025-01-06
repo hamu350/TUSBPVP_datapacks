@@ -40,6 +40,9 @@ execute unless data storage tusb_pvp: settings{death_match:1b} if score @s ShowM
 # 観光モード終了
 execute if score @s ShowMenu matches 50 run function tusb_remake:system/switch_sightseeing_off
 
+# ステージ変更
+
+
 #> 設定画面再表示
 function tusb_remake:login/re_show
 
