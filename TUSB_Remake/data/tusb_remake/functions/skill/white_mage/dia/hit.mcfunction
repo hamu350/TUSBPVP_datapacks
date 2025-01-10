@@ -7,7 +7,7 @@ execute if score @s PotentialSkill matches 4211 run effect give @s minecraft:ins
 execute if score @s PotentialSkill matches 4212 run effect give @s minecraft:instant_health 1 4 false
 execute if score @s PotentialSkill matches 4213 run effect give @s minecraft:instant_health 1 5 false
 #execute if score @s PotentialSkill matches 4214..4219 run effect give @s minecraft:instant_damage 1 0 false
-data modify storage score_damage: Argument set value {Damage:15.00,DamageType:"Projectile"}
+data modify storage score_damage: Argument set value {Damage:18.00,DamageType:"Projectile"}
 
 function score_damage:api/attack
 

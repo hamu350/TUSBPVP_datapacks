@@ -25,3 +25,4 @@ scoreboard players enable @a ShowMenu
 kill @e[type=wolf]
 kill @e[type=iron_golem]
 effect give @a instant_health 1 20
+scoreboard objectives setdisplay list WinCount

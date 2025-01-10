@@ -341,7 +341,6 @@ worldborder center 0 0
 worldborder set 7000
 
 ### setdisplay
-scoreboard objectives setdisplay list KillCount
 scoreboard objectives setdisplay sidebar MP
 scoreboard objectives setdisplay belowName HP
 

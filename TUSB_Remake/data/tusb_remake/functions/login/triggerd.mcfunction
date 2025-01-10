@@ -41,11 +41,14 @@ execute unless data storage tusb_pvp: settings{death_match:1b} if score @s ShowM
 execute if score @s ShowMenu matches 50 run function tusb_remake:system/switch_sightseeing_off
 
 # ステージ変更
-
+execute if score @s ShowMenu matches 60 run function tusb_remake:pvp/stage/
+execute if score @s ShowMenu matches 61 run function tusb_remake:pvp/stage/gullivers_land
+execute if score @s ShowMenu matches 62 run function tusb_remake:pvp/stage/reaper_island
+execute if score @s ShowMenu matches 63 run function tusb_remake:pvp/stage/purgatory
 
 #> 設定画面再表示
 function tusb_remake:login/re_show
 
 ##トリガーリセット
 scoreboard players reset @s ShowMenu
-scoreboard players enable @s ShowMenu
+execute unless data storage tusb_pvp: {Battle:true} run scoreboard players enable @s ShowMenu
