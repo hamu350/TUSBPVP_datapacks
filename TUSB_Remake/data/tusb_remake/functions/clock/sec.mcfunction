@@ -73,7 +73,7 @@ tag @e[type=spawner_minecart,tag=CooldownRequired,nbt={PortalCooldown:300}] add 
 # execute positioned 177 39 -75 if entity @a[distance=..60,gamemode=!spectator] run function tusb_remake:clock/gimmic/hopper/
 
 ## 祈り(最後の手段/最初に教会に行くまで使えない)を表示
-# execute if data storage tusb_remake: settings{prayable:true} as @a[tag=Pray,scores={Job=1..}] run function tusb_remake:player/pray/show
+execute as @a[tag=Pray] run function tusb_remake:player/pray/show
 
 ## 炎出す奴
 execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~1 minecraft:fire keep
