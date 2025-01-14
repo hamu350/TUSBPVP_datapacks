@@ -46,7 +46,7 @@ data modify storage tusb_remake: _.26 set value {COMMENT:"/* 効果時間が文�
 data modify storage tusb_remake: _.27 set value {name:["ぽむぽむハナビ"],level:[37],cost:35,description:[["ぽむぽむハナビを召喚し、当たった敵に15ダメージ与える。"]],condition:"ニンジン付きの棒を持って右クリック"}
 data modify storage tusb_remake: _.28 set value {COMMENT:"/* 26@6mと同様 */",name:[""],level:[39],cost:10000,description:[["エンダーチェストを召喚する。","上空では長く保たない。"]],condition:"ニンジン付きの棒を持って右クリック",duration:"1～25"}
 data modify storage tusb_remake: _.29 set value {name:["きらきらタライ"],level:[43],cost:15,description:[["周囲の敵の頭上にきらきらタライを召喚し、爆風に当たった敵に15ダメージ与える。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
-data modify storage tusb_remake: _.30 set value {name:["サモン:ぷちブラック"],level:[50],cost:100,description:[["ぷちブラックホールを召喚する。","範囲内のプレイヤーとペットを全て吸い込み、敵には0.5秒ごとに16ダメージ与える。"]],condition:"ニンジン付きの棒を持って右クリック",duration:[15],range:[10]}
+data modify storage tusb_remake: _.30 set value {name:["サモン:ぷちブラック"],level:[50],cost:80,description:[["ぷちブラックホールを召喚する。","範囲内のプレイヤーとペットを全て吸い込み、敵には0.5秒ごとに16ダメージ与える。"]],condition:"ニンジン付きの棒を持って右クリック",duration:[15],range:[10]}
 
 data modify storage tusb_remake: skill_table.summoner set from storage tusb_remake: _
 data remove storage tusb_remake: _
